@@ -133,13 +133,15 @@ textarea {
        transition:0.3s ease;
        z-index:2;
        height:200px;
-       background-color:rgba(0,0,0,0.8);
+       background-color:rgba(1, 172, 236, 0.9);
        position:absolute;
        width:400px;
        color:white;
        display:flex;
        justify-content: center;
        align-items:center;
+       flex-direction: column;
+       text-align:center;
    }
    .overlay-container {
        display:flex;
@@ -178,8 +180,6 @@ textarea {
         border:none;
     }
     .navbar  {
-
-        height:7vh;
         img {
             width:180px;
         }
@@ -217,16 +217,16 @@ textarea {
         }
         .information {
             h1 {
-                font-size:38px;
+                font-size:60px;
+                font-weight:800;
                 margin-bottom:20px;
                 margin-top:20px;
-                width:90%;
+                width:100%;
                 margin:0 auto;
                 padding-bottom:20px;
             }
-            background-color:$mainColorTransparent;
             color:white;
-            width:700px;
+            width:900px;
             padding:50px;
             text-align:center;
         }
