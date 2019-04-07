@@ -88,7 +88,25 @@ textarea {
 /* ==========================================================================
   Erind's custom styles
   ========================================================================== */
+.overlay-container img {
+  transition: 0.3s ease; }
+.overlay-container img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px; }
+
+.see-more-btn {
+  background-color: #01acec;
+  color: white;
+  padding: 20px 100px;
+  margin-top: 10px; }
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; }
+
 .overlay-div {
+  z-index: 2;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -107,8 +125,13 @@ textarea {
   width: 100%; }
 
 .key-div {
-  height: 100vh; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh; }
   .key-div h1 {
+    margin-right: auto;
     font-weight: 900; }
 
 .navbar-nav li a {
@@ -125,7 +148,7 @@ textarea {
 
 .navbar {
   height: 10vh;
-  background-color: #eaf8ff;
+  background-color: white;
   color: black; }
   .navbar img {
     width: 180px; }
