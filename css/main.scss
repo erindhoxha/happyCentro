@@ -7,7 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 $mainColor: #01acec;
- 
+$mainColorTransparent: rgba(1, 172, 236, 0.7);
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -16,6 +17,13 @@ $mainColor: #01acec;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family:'Titillium Web';
+}
+body {
+    font-family: 'Titillium Web';
+}
+button {
+    font-family:'Track';
 }
 
 /*
@@ -118,19 +126,35 @@ textarea {
         display:flex;
         align-items:center;
         justify-content: center;
+        .button-portfolio {
+            padding:15px 30px;
+            border-radius:0px;
+            transition:0.3s ease;
+        }
+        .button-portfolio:hover {
+            background-color:$mainColor !important;
+            color:white;
+        }
+        .button-get-in-touch {
+            padding:16px 30px;
+            background-color:$mainColor !important;
+            box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
+            transition:0.3s ease;
+        }
         .information {
             h1 {
-                font-size:30px;
+                font-size:38px;
                 margin-bottom:20px;
                 margin-top:20px;
+                width:90%;
+                margin:0 auto;
+                padding-bottom:20px;
             }
-            background-color:$mainColor;
+            background-color:$mainColorTransparent;
             color:white;
-            width:500px;
-            padding:20px;
-            border-radius: 20px;
+            width:700px;
+            padding:50px;
             text-align:center;
-
         }
     }
 
