@@ -88,9 +88,45 @@ textarea {
 /* ==========================================================================
   Erind's custom styles
   ========================================================================== */
+.overlay-div {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.overlay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.key-image {
+  width: 100%; }
+
+.key-div {
+  height: 100vh; }
+  .key-div h1 {
+    font-weight: 900; }
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 23px; }
+
+.find-us-button {
+  background-color: #01acec;
+  color: white;
+  padding: 10px 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none; }
+
 .navbar {
   height: 10vh;
-  background-color: #01acec; }
+  background-color: #eaf8ff;
+  color: black; }
   .navbar img {
     width: 180px; }
 

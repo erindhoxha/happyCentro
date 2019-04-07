@@ -109,13 +109,54 @@ textarea {
  /* ==========================================================================
    Erind's custom styles
    ========================================================================== */
-
+   .overlay-div {
+       height:200px;
+       background-color:rgba(0,0,0,0.8);
+       position:absolute;
+       width:400px;
+       color:white;
+       display:flex;
+       justify-content: center;
+       align-items:center;
+   }
+   .overlay-container {
+       display:flex;
+       justify-content: center;
+       align-items:center;
+   }
+   .key-image {
+       width:100%;
+   }
+   .key-div {
+       height:100vh;
+       h1 {
+           font-weight:900;
+       }
+   }
+   .navbar-nav {
+        li {
+            a {
+                color:black !important;
+                font-size:23px;
+            }
+        }
+    }
+    .find-us-button {
+        background-color:$mainColor;
+        color:white;
+        padding:10px 30px;
+        margin-left:20px;
+        margin-right:20px;
+        border:none;
+    }
     .navbar  {
+
         height:10vh;
         img {
             width:180px;
         }
-        background-color:$mainColor;
+        background-color:rgb(234, 248, 255);
+        color:black;
     }
 
     .hero-image {
