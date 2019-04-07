@@ -90,7 +90,7 @@ textarea {
   ========================================================================== */
 .overlay-container img {
   transition: 0.3s ease; }
-.overlay-container img:hover {
+.overlay-container img:hover, .overlay-container .overlay-div:hover {
   transform: scale(1.1);
   box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px; }
 
@@ -106,6 +106,7 @@ textarea {
   margin-top: 20px; }
 
 .overlay-div {
+  transition: 0.3s ease;
   z-index: 2;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -135,8 +136,8 @@ textarea {
     font-weight: 900; }
 
 .navbar-nav li a {
-  color: black !important;
-  font-size: 23px; }
+  color: white !important;
+  font-size: 20px; }
 
 .find-us-button {
   background-color: #01acec;
@@ -147,15 +148,21 @@ textarea {
   border: none; }
 
 .navbar {
-  height: 10vh;
-  background-color: white;
-  color: black; }
+  height: 7vh;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  color: white; }
   .navbar img {
     width: 180px; }
 
-.hero-image {
-  height: 90vh;
+.overlay {
   background-image: url("../img/bg-hero.jpeg");
+  height: 100vh; }
+
+.hero-image {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
   display: flex;
