@@ -13,13 +13,16 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Titillium Web'; }
+  font-family: "Titillium Web";
+}
 
 body {
-  font-family: 'Titillium Web'; }
+  font-family: "Titillium Web";
+}
 
 button {
-  font-family: 'Track'; }
+  font-family: "Track";
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -32,11 +35,13 @@ button {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
@@ -47,7 +52,8 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -60,7 +66,8 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
@@ -68,13 +75,15 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -83,27 +92,32 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
   Erind's custom styles
   ========================================================================== */
 .overlay-container img {
-  transition: 0.3s ease; }
+  transition: 0.3s ease;
+}
 .overlay-container img:hover, .overlay-container .overlay-div:hover {
   transform: scale(1.1);
-  box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px; }
+  box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
+}
 
 .see-more-btn {
   background-color: #01acec;
   color: white;
   padding: 20px 100px;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .button-container {
   width: 100%;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .overlay-div {
   transition: 0.3s ease;
@@ -117,29 +131,35 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+}
 
 .overlay-container {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .key-image {
-  width: 100%; }
+  width: 100%;
+}
 
 .key-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh; }
-  .key-div h1 {
-    margin-right: auto;
-    font-weight: 900; }
+  height: 80vh;
+}
+.key-div h1 {
+  margin-right: auto;
+  font-weight: 900;
+}
 
 .navbar-nav li a {
   color: white !important;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .find-us-button {
   background-color: #01acec;
@@ -147,19 +167,24 @@ textarea {
   padding: 10px 30px;
   margin-left: 20px;
   margin-right: 20px;
-  border: none; }
+  border: none;
+}
 
 .navbar {
   position: fixed;
   width: 100%;
   background-color: transparent;
-  color: white; }
-  .navbar img {
-    width: 180px; }
+  color: white;
+  transition: 0.3s ease !important;
+}
+.navbar img {
+  width: 180px;
+}
 
 .overlay {
   background-image: url("../img/bg-hero.jpeg");
-  height: 100vh; }
+  height: 100vh;
+}
 
 .hero-image {
   height: 100vh;
@@ -168,48 +193,39 @@ textarea {
   background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center; }
-  .hero-image .button-portfolio {
-    padding: 15px 30px;
-    border-radius: 0px;
-    transition: 0.3s ease; }
-  .hero-image .button-portfolio:hover {
-    background-color: #01acec !important;
-    color: white; }
-  .hero-image .button-get-in-touch {
-    padding: 16px 30px;
-    background-color: #01acec !important;
-    box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
-    transition: 0.3s ease; }
-  .hero-image .information {
-    color: white;
-    width: 900px;
-    padding: 50px;
-    text-align: center; }
-    .hero-image .information h1 {
-      font-size: 60px;
-      font-weight: 800;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      width: 100%;
-      margin: 0 auto;
-      padding-bottom: 20px; }
-      
-      
-      /* Anam's CSS =================== */
-
-
-    .standardColour {
-
-      background-color: #01acec !important;
-    }  
-    
-.scrollColour {
-
-  background-color: aquamarine !important;
+  justify-content: center;
+}
+.hero-image .button-portfolio {
+  padding: 15px 30px;
+  border-radius: 0px;
+  transition: 0.3s ease;
+}
+.hero-image .button-portfolio:hover {
+  background-color: #01acec !important;
+  color: white;
+}
+.hero-image .button-get-in-touch {
+  padding: 16px 30px;
+  background-color: #01acec !important;
+  box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
+  transition: 0.3s ease;
+}
+.hero-image .information {
+  color: white;
+  width: 900px;
+  padding: 50px;
+  text-align: center;
+}
+.hero-image .information h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
-    
 /* ==========================================================================
   Helper classes
   ========================================================================== */
@@ -217,7 +233,8 @@ textarea {
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 /*
 * Hide only visually, but have it available for screen readers:
@@ -237,7 +254,8 @@ textarea {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-  /* 1 */ }
+  /* 1 */
+}
 
 /*
 * Extends the .visuallyhidden class to allow the element
@@ -252,13 +270,15 @@ textarea {
   overflow: visible;
   position: static;
   width: auto;
-  white-space: inherit; }
+  white-space: inherit;
+}
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
 * Clearfix: contain floats
@@ -276,10 +296,12 @@ textarea {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -287,9 +309,11 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
+  /* Style adjustments for viewports that meet the condition */
+}
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
+  /* Style adjustments for high resolution devices */
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -297,60 +321,72 @@ textarea {
    ========================================================================== */
 @media print {
   *,
-  *:before,
-  *:after {
+*:before,
+*:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
   a,
-  a:visited {
-    text-decoration: underline; }
+a:visited {
+    text-decoration: underline;
+  }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
   a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
+a[href^="javascript:"]:after {
+    content: "";
+  }
 
   pre {
-    white-space: pre-wrap !important; }
+    white-space: pre-wrap !important;
+  }
 
   pre,
-  blockquote {
+blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
 
   tr,
-  img {
-    page-break-inside: avoid; }
+img {
+    page-break-inside: avoid;
+  }
 
   p,
-  h2,
-  h3 {
+h2,
+h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
-  h3 {
-    page-break-after: avoid; } }
+h3 {
+    page-break-after: avoid;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

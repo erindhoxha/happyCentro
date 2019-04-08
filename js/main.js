@@ -1,4 +1,7 @@
 window.onscroll = () => {
-    var nav = document.getElementsByClassName('navbar');
-    if(this.scrollY <= 5) nav.addClass = 'standardColour'; else nav.addClass = 'scrollColour';
+    if(this.scrollY <= 5) {
+      $('.navbar').css('background-color', 'transparent');
+    } else {
+      $('.navbar').css('background-color', 'white');
+    }
   };

@@ -13,11 +13,11 @@ $mainColorTransparent: rgba(1, 172, 236, 0.7);
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family:'Titillium Web';
+html {
+color: #222;
+font-size: 1em;
+line-height: 1.4;
+font-family:'Titillium Web';
 }
 body {
     font-family: 'Titillium Web';
@@ -25,6 +25,7 @@ body {
 button {
     font-family:'Track';
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -187,6 +188,7 @@ textarea {
         width:100%;
         background-color:transparent;
         color:white;
+        transition: 0.3s ease !important;
     }
     .overlay {
         background-image:url('../img/bg-hero.jpeg');
