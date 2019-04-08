@@ -109,18 +109,92 @@ textarea {
  /* ==========================================================================
    Erind's custom styles
    ========================================================================== */
+   .overlay-container {
+       img {
+           transition:0.3s ease;
+       }
+       img:hover, .overlay-div:hover {
+           transform:scale(1.1);
+           box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
+       }
+   }
+   .see-more-btn {
+       background-color:$mainColor;
+       color:white;
+       padding:20px 100px;
+       margin-top:10px;
+   }
+   .button-container {
+       width:100%;
+       text-align:center;
+       margin-top:20px;
+   }
+   .overlay-div {
+       transition:0.3s ease;
+       z-index:2;
+       height:200px;
+       background-color:rgba(1, 172, 236, 0.9);
+       position:absolute;
+       width:400px;
+       color:white;
+       display:flex;
+       justify-content: center;
+       align-items:center;
+       flex-direction: column;
+       text-align:center;
+   }
+   .overlay-container {
+       display:flex;
+       justify-content: center;
+       align-items:center;
+   }
+   .key-image {
+       width:100%;
+   }
+   .key-div {
+       display:flex;
+       justify-content: center;
+       align-items:center;
+       flex-direction: column;
+       height:80vh;
+       h1 {
+           margin-right:auto;
+           font-weight:900;
+       }
+   }
+   .navbar-nav {
+        li {
+            a {
+                color:white !important;
+                font-size:20px;
+            }
+        }
+    }
 
+    .find-us-button {
+        background-color:$mainColor;
+        color:white;
+        padding:10px 30px;
+        margin-left:20px;
+        margin-right:20px;
+        border:none;
+    }
     .navbar  {
-        height:10vh;
         img {
             width:180px;
         }
-        background-color:$mainColor;
+        position:fixed;
+        width:100%;
+        background-color:transparent;
+        color:white;
     }
-
-    .hero-image {
-        height:90vh;
+    .overlay {
         background-image:url('../img/bg-hero.jpeg');
+        height:100vh;
+    }
+    .hero-image {
+        height:100vh;
+        background-color:rgba(0,0,0,0.5);
         background-size:cover;
         background-position:center;
         display:flex;
@@ -143,16 +217,16 @@ textarea {
         }
         .information {
             h1 {
-                font-size:38px;
+                font-size:60px;
+                font-weight:800;
                 margin-bottom:20px;
                 margin-top:20px;
-                width:90%;
+                width:100%;
                 margin:0 auto;
                 padding-bottom:20px;
             }
-            background-color:$mainColorTransparent;
             color:white;
-            width:700px;
+            width:900px;
             padding:50px;
             text-align:center;
         }
