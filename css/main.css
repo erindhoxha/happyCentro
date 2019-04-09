@@ -200,16 +200,15 @@ textarea {
 /* ========================== */
 .footer {
   background: #01acec;
-  height: 40vh;
+  height: 45vh;
   width: 100%;
-  margin-top: 30%; }
+  margin-top: 5%; }
 
 .portfolioButtonFooter {
   background-color: #01acec;
   color: white;
   padding: 5px 50px;
   margin-left: 35%;
-  margin-top: 10%;
   border: white 4px solid;
   align-content: center;
   text-align: center; }
@@ -219,10 +218,25 @@ textarea {
   color: white;
   padding: 5px 50px;
   margin-left: 5%;
-  margin-top: 10%;
   border: white 4px solid;
   align-content: center;
   text-align: center; }
+
+.brandLogo {
+  z-index: 9999;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 2%; }
+
+.socialMedia {
+  padding: 2%; }
+
+.facebook {
+  background-image: url(/img/facebookLogo.png);
+  height: 46px;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-left: 25%; }
 
 /* ==========================================================================
   Helper classes
