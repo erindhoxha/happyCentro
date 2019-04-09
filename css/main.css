@@ -9,6 +9,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+.h1-hc {
+  font-weight: 900; }
+
 html {
   color: #222;
   font-size: 1em;
@@ -147,6 +150,13 @@ textarea {
   margin-left: 20px;
   margin-right: 20px;
   border: 1px solid white; }
+
+.rotate-h1 {
+  transform: rotate(270deg);
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 99999; }
 
 .navbar {
   position: fixed;
@@ -306,6 +316,9 @@ textarea {
 
 .linkedin:hover {
   transform: scale(1.3); }
+
+.container-first {
+  width: 80%; }
 
 /* ==========================================================================
   Helper classes
