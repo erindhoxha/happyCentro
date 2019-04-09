@@ -195,6 +195,11 @@ textarea {
         color:white;
         justify-content: center;
         align-items: center;
+        cursor:pointer;
+        transition:0.2s ease-in;
+    }
+    .overlay-project:hover {
+        background-color:$mainColor;
     }
     .instagram-icon {
         color:white;
