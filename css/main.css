@@ -211,7 +211,7 @@ textarea {
 .portfolioButtonFooter {
   background-color: #01acec;
   color: white;
-  padding: 5px 50px;
+  padding: 10px 50px;
   border: white 4px solid;
   align-content: center;
   text-align: center; }
@@ -219,7 +219,7 @@ textarea {
 .contactButtonFooter {
   background-color: #01acec;
   color: white;
-  padding: 5px 50px;
+  padding: 10px 50px;
   margin-left: 5%;
   border: white 4px solid;
   align-content: center;
