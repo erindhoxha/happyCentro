@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
-
+@import 'scss_partials/projects';
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -15,6 +15,10 @@ $mainColorTransparent: rgba(1, 172, 236, 0.7);
 .h1-hc {
     font-weight: 900;
     transition:0.3s ease;
+}
+.portfolio-image {
+    width:100%;
+    max-height:500px;
 }
 html {
 color: #222;
@@ -179,6 +183,23 @@ textarea {
         margin-left:20px;
         margin-right:20px;
         border:1px solid white;
+    }
+    .overlay-project {
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        position: absolute;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        color:white;
+        justify-content: center;
+        align-items: center;
+    }
+    .instagram-icon {
+        color:white;
+        font-size:60px;
+        border-radius:50%;
+        padding:10px;
     }
     .rotate-h1 {
         transform:rotate(270deg);
