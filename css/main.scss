@@ -14,6 +14,7 @@ $mainColorTransparent: rgba(1, 172, 236, 0.7);
    ========================================================================== */
 .h1-hc {
     font-weight: 900;
+    transition:0.3s ease;
 }
 html {
 color: #222;
@@ -183,8 +184,9 @@ textarea {
         transform:rotate(270deg);
         position:fixed;
         top:50%;
-        left:0;
         z-index:99999;
+        left: -300px;
+        transition:0.5s ease;
     }
     .navbar  {
         img {
