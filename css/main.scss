@@ -6,7 +6,7 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-$mainColor: #01acec;
+$mainColor: #017fad;
 $mainColorTransparent: rgba(1, 172, 236, 0.7);
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
 /* ==========================================================================
@@ -110,20 +110,18 @@ textarea {
  /* ==========================================================================
    Erind's custom styles
    ========================================================================== */
-   .overlay-container {
-       img {
-           transition:0.3s ease;
-       }
-       img:hover, .overlay-div:hover {
-           transform:scale(1.1);
-           box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
-       }
-   }
+
    .see-more-btn {
-       background-color:$mainColor;
+       background-color:transparent;
+       color:black;
+       border:1px solid black;
+       padding:14px 60px;
+       margin-top:40px;
+       transition:0.3s ease;
+   }
+   .see-more-btn:hover {
+       background-color:black;
        color:white;
-       padding:20px 100px;
-       margin-top:10px;
    }
    .button-container {
        width:100%;
@@ -166,23 +164,22 @@ textarea {
    .navbar-nav {
         li {
             a {
-                color:white !important;
                 font-size:20px;
             }
         }
     }
 
     .find-us-button {
-        background-color:$mainColor;
+        background-color:transparent;
         color:white;
         padding:10px 30px;
         margin-left:20px;
         margin-right:20px;
-        border:none;
+        border:1px solid white;
     }
     .navbar  {
         img {
-            width:180px;
+            width:140px;
         }
         position:fixed;
         width:100%;
@@ -207,16 +204,24 @@ textarea {
             padding:15px 30px;
             border-radius:0px;
             transition:0.3s ease;
+            background-color:transparent !important;
+            border:1px solid white;
+            color:white;
         }
         .button-portfolio:hover {
-            background-color:$mainColor !important;
+            background-color:transparent !important;
             color:white;
         }
         .button-get-in-touch {
+            background-color:transparent !important;
+            border:1px solid white;
+            border-radius:0px !important;
             padding:16px 30px;
-            background-color:$mainColor !important;
             box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
             transition:0.3s ease;
+        }
+        .button-get-in-touch:hover {
+            background-color:transparent !important;
         }
         .information {
             h1 {
