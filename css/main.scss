@@ -189,6 +189,7 @@ textarea {
         background-color:transparent;
         color:white;
         transition: 0.3s ease !important;
+        z-index: 9999;
     }
     .overlay {
         background-image:url('../img/bg-hero.jpeg');
@@ -234,9 +235,37 @@ textarea {
         }
     }
 
+/* ========================== */
+.footer {
+
+    background: $mainColor;
+    height: 40vh;
+    width: 100%;
+    margin-top: 30%;
+}
 
 
+.portfolioButtonFooter{
+    background-color:$mainColor;
+    color:white;
+    padding:5px 50px;
+    margin-left:35%;
+    margin-top: 10%;
+    border:white 4px solid;
+    align-content: center;
+    text-align: center;
+}
 
+.contactButtonFooter{
+    background-color:$mainColor;
+    color:white;
+    padding:5px 50px;
+    margin-left:5%;
+    margin-top: 10%;
+    border:white 4px solid;
+    align-content: center;
+    text-align: center;
+}
 
 
 
