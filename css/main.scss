@@ -259,6 +259,10 @@ textarea {
     text-align: center;
 }
 
+.portfolioButtonFooter:hover{
+    transform: scale(1.1);
+}
+
 .contactButtonFooter{
     background-color:$mainColor;
     color:white;
@@ -267,6 +271,10 @@ textarea {
     border:white 4px solid;
     align-content: center;
     text-align: center;
+}
+
+.contactButtonFooter:hover{
+    transform: scale(1.1);
 }
 
 .brandLogo {
@@ -289,6 +297,9 @@ textarea {
     border: none;
     background-color: $mainColor;
 }
+.facebook:hover {
+    transform:scale(1.3);
+}
 
 .twitter {
     background-image: url(/img/twitterLogo.png);
@@ -298,6 +309,10 @@ textarea {
     margin-left: 1%;
     border: none;
     background-color: $mainColor;
+}
+
+.twitter:hover {
+    transform:scale(1.3);
 }
 
 .instagram {
@@ -310,6 +325,10 @@ textarea {
     background-color: $mainColor;
 }
 
+.instagram:hover {
+    transform:scale(1.3);
+}
+
 .googlePlus {
     background-image: url(/img/googleIcon.png);
     height: 50px;
@@ -318,6 +337,9 @@ textarea {
     margin-left: 1%;
     border: none;
     background-color: $mainColor;
+}
+.googlePlus:hover {
+    transform:scale(1.3);
 }
 
 .linkedin {
@@ -330,6 +352,9 @@ textarea {
     background-color: $mainColor;
 }
 
+.linkedin:hover {
+    transform:scale(1.3);
+}
 
 
 

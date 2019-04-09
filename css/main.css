@@ -216,6 +216,9 @@ textarea {
   align-content: center;
   text-align: center; }
 
+.portfolioButtonFooter:hover {
+  transform: scale(1.1); }
+
 .contactButtonFooter {
   background-color: #01acec;
   color: white;
@@ -224,6 +227,9 @@ textarea {
   border: white 4px solid;
   align-content: center;
   text-align: center; }
+
+.contactButtonFooter:hover {
+  transform: scale(1.1); }
 
 .brandLogo {
   z-index: 9999;
@@ -244,6 +250,9 @@ textarea {
   border: none;
   background-color: #01acec; }
 
+.facebook:hover {
+  transform: scale(1.3); }
+
 .twitter {
   background-image: url(/img/twitterLogo.png);
   height: 50px;
@@ -252,6 +261,9 @@ textarea {
   margin-left: 1%;
   border: none;
   background-color: #01acec; }
+
+.twitter:hover {
+  transform: scale(1.3); }
 
 .instagram {
   background-image: url(/img/instagramLogo.png);
@@ -262,6 +274,9 @@ textarea {
   border: none;
   background-color: #01acec; }
 
+.instagram:hover {
+  transform: scale(1.3); }
+
 .googlePlus {
   background-image: url(/img/googleIcon.png);
   height: 50px;
@@ -271,6 +286,9 @@ textarea {
   border: none;
   background-color: #01acec; }
 
+.googlePlus:hover {
+  transform: scale(1.3); }
+
 .linkedin {
   background-image: url(/img/linkedin.png);
   height: 50px;
@@ -279,6 +297,9 @@ textarea {
   margin-left: 1%;
   border: none;
   background-color: #01acec; }
+
+.linkedin:hover {
+  transform: scale(1.3); }
 
 /* ==========================================================================
   Helper classes
