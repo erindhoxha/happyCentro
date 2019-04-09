@@ -204,11 +204,14 @@ textarea {
   width: 100%;
   margin-top: 5%; }
 
+.buttonContainer {
+  width: 100%;
+  text-align: center; }
+
 .portfolioButtonFooter {
   background-color: #01acec;
   color: white;
   padding: 5px 50px;
-  margin-left: 35%;
   border: white 4px solid;
   align-content: center;
   text-align: center; }
@@ -230,14 +233,14 @@ textarea {
 
 .socialMedia {
   padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  text-align: center; }
 
 .facebook {
   background-image: url(/img/facebookLogo.png);
   height: 50px;
   width: 50px;
   background-repeat: no-repeat;
-  margin-left: 40%;
   border: none;
   background-color: #01acec; }
 
