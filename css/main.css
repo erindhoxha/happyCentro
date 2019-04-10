@@ -9,6 +9,36 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+.h1-hc {
+  font-weight: 900;
+  transition: 0.3s ease; }
+
+.portfolio-image {
+  width: 100%;
+  max-height: 500px; }
+
+.title {
+  font-weight: 900; }
+
+.container-projects {
+  padding-left: 150px; }
+
+.icon-div p {
+  font-size: 20px;
+  font-weight: 400; }
+
+.top-div {
+  z-index: 999999;
+  width: 100%;
+  background-color: white;
+  padding-left: 136px;
+  padding-bottom: 100px; }
+  .top-div .row {
+    margin-top: 100px;
+    text-align: center; }
+    .top-div .row div i {
+      font-size: 50px; }
+
 html {
   color: #222;
   font-size: 1em;
@@ -16,10 +46,15 @@ html {
   font-family: 'Titillium Web'; }
 
 body {
-  font-family: 'Titillium Web'; }
+  font-family: 'Titillium Web';
+  background-image: url("../img/bg-01.png");
+  background-size: cover; }
 
 button {
   font-family: 'Track'; }
+
+.icon-code {
+  margin-bottom: 20px; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -88,17 +123,17 @@ textarea {
 /* ==========================================================================
   Erind's custom styles
   ========================================================================== */
-.overlay-container img {
-  transition: 0.3s ease; }
-.overlay-container img:hover, .overlay-container .overlay-div:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px; }
-
 .see-more-btn {
-  background-color: #01acec;
-  color: white;
-  padding: 20px 100px;
-  margin-top: 10px; }
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 14px 60px;
+  margin-top: 40px;
+  transition: 0.3s ease; }
+
+.see-more-btn:hover {
+  background-color: black;
+  color: white; }
 
 .button-container {
   width: 100%;
@@ -138,16 +173,45 @@ textarea {
     font-weight: 900; }
 
 .navbar-nav li a {
-  color: white !important;
   font-size: 20px; }
 
 .find-us-button {
-  background-color: #01acec;
+  background-color: transparent;
   color: white;
   padding: 10px 30px;
   margin-left: 20px;
   margin-right: 20px;
-  border: none; }
+  border: 1px solid white; }
+
+.overlay-project {
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in; }
+
+.overlay-project:hover {
+  background-color: rgba(1, 172, 236, 0.7); }
+
+.instagram-icon {
+  color: white;
+  font-size: 60px;
+  border-radius: 50%;
+  padding: 10px; }
+
+.rotate-h1 {
+  transform: rotate(270deg);
+  position: fixed;
+  top: 50%;
+  z-index: -9;
+  left: -300px;
+  transition: 0.5s ease; }
 
 .navbar {
   position: fixed;
@@ -157,7 +221,7 @@ textarea {
   transition: 0.3s ease !important;
   z-index: 9999; }
   .navbar img {
-    width: 180px; }
+    width: 140px; }
 
 .overlay {
   background-image: url("../img/bg-hero.jpeg");
@@ -174,15 +238,23 @@ textarea {
   .hero-image .button-portfolio {
     padding: 15px 30px;
     border-radius: 0px;
-    transition: 0.3s ease; }
-  .hero-image .button-portfolio:hover {
-    background-color: #01acec !important;
+    transition: 0.3s ease;
+    background-color: transparent !important;
+    border: 1px solid white;
     color: white; }
+  .hero-image .button-portfolio:hover {
+    background-color: white !important;
+    color: black; }
   .hero-image .button-get-in-touch {
-    padding: 16px 30px;
-    background-color: #01acec !important;
+    background-color: transparent !important;
+    border: 1px solid white;
+    border-radius: 0px !important;
+    padding: 15px 30px;
     box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
     transition: 0.3s ease; }
+  .hero-image .button-get-in-touch:hover {
+    background-color: white !important;
+    color: black !important; }
   .hero-image .information {
     color: white;
     width: 900px;
@@ -199,43 +271,44 @@ textarea {
 
 /* ========================== */
 .footer {
-  background: #01acec;
-  height: 55vh;
-  width: 100%;
-  margin-top: 5%; }
+  background: #219dca;
+  height: 100%;
+  width: 100%; }
 
 .buttonContainer {
   width: 100%;
   text-align: center; }
 
 .portfolioButtonFooter {
-  background-color: #01acec;
+  background-color: transparent;
   color: white;
-  padding: 10px 50px;
-  border: white 4px solid;
-  align-content: center;
-  text-align: center; }
+  border: white 2px solid;
+  border-radius: 0px;
+  transition: 0.3s ease;
+  padding: 10px;
+  margin: 5px; }
 
 .portfolioButtonFooter:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  color: white; }
 
 .contactButtonFooter {
-  background-color: #01acec;
+  background-color: #219dca;
   color: white;
-  padding: 10px 50px;
-  margin-left: 5%;
-  border: white 4px solid;
-  align-content: center;
-  text-align: center; }
+  border: white 2px solid;
+  transition: 0.3s ease;
+  border-radius: 0px;
+  padding: 10px;
+  margin: 5px; }
 
 .contactButtonFooter:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  color: white; }
 
 .brandLogo {
-  z-index: 9999;
-  width: 20%;
-  margin-left: 40%;
-  margin-top: 2%; }
+  width: 200px;
+  display: block;
+  margin: 50px auto; }
 
 .socialMedia {
   padding-top: 5%;
@@ -248,7 +321,7 @@ textarea {
   width: 50px;
   background-repeat: no-repeat;
   border: none;
-  background-color: #01acec; }
+  background-color: #219dca; }
 
 .facebook:hover {
   transform: scale(1.3); }
@@ -260,7 +333,7 @@ textarea {
   background-repeat: no-repeat;
   margin-left: 1%;
   border: none;
-  background-color: #01acec; }
+  background-color: #219dca; }
 
 .twitter:hover {
   transform: scale(1.3); }
@@ -272,7 +345,7 @@ textarea {
   background-repeat: no-repeat;
   margin-left: 1%;
   border: none;
-  background-color: #01acec; }
+  background-color: #219dca; }
 
 .instagram:hover {
   transform: scale(1.3); }
@@ -284,7 +357,7 @@ textarea {
   background-repeat: no-repeat;
   margin-left: 1%;
   border: none;
-  background-color: #01acec; }
+  background-color: #219dca; }
 
 .googlePlus:hover {
   transform: scale(1.3); }
@@ -296,10 +369,13 @@ textarea {
   background-repeat: no-repeat;
   margin-left: 1%;
   border: none;
-  background-color: #01acec; }
+  background-color: #219dca; }
 
 .linkedin:hover {
   transform: scale(1.3); }
+
+.container-first {
+  width: 80%; }
 
 /* ==========================================================================
   Helper classes
@@ -381,6 +457,45 @@ textarea {
   /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+@media only screen and (max-width: 1024px) {
+  .key-img-div {
+    margin-bottom: 10px; }
+
+  .rotate-h1 {
+    display: none; }
+
+  body {
+    background-image: none; }
+
+  .container-first {
+    min-height: 900px;
+    width: 100%; }
+
+  .find-us-button {
+    background-color: #219dca;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+  .navbar {
+    padding: 0px; }
+
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px; }
+
+  .navbar-nav {
+    padding-left: 15px; }
+
+  .navbar-toggler {
+    margin-right: 10px; }
+
+  .navbar-brand {
+    padding-left: 10px; }
+
+  .hero-image .button-portfolio {
+    margin: 10px; }
+  .hero-image .information h1 {
+    font-size: 35px; } }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

@@ -17,10 +17,11 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body id="bs">
 
     <nav class="navbar navbar-expand-lg navbar-dark navigation">
         <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt=""></a>
@@ -33,7 +34,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Link</a>
             </li>
             <button class="find-us-button">HappyCentro Finder</button>
@@ -44,84 +45,160 @@
       <div class="overlay">
       <div class="container-fluid hero-image">
         <div class="information">
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa nisi atque, modi est maiores.</h1>
+          <h1>A digital agency. We blend creativity and technology to transform and grow your client's businesses.</h1>
           <button class="btn button-portfolio bg-white">Portfolio</button>
           <button class="btn button-get-in-touch bg-primary text-white">Get in touch</button>
         </div>
       </div>
+      </div>
 
-      <!-- SECOND CONTAINER - 3 KEY THINGS -->
-      <div class="container-fluid pt-4 p-5 mt-5 mb-5 pb-5 key-div">
-        <h1>We help <br>our clients <br>with 3 key things</h1>
-        <div class="row mt-4 pt-4">
-        <div class="col-lg-4 col-sm-12 col-md-6 col-6 overlay-container" data-aos="fade-up">
-          <div class="overlay-div">
-            <h3>Branding</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, dicta!</p>
-          </div>
-          <img class="key-image" src="img/key-image.jpeg" alt="">
+  <!-- SECOND CONTAINER - 3 KEY THINGS -->
+  <div class="container-fluid container-first pt-4 p-5 mt-5 mb-5 pb-5 key-div">
+    <h1>We help <br>our clients <br>with 3 key things</h1>
+    <div class="row mt-4 pt-4">
+      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-up">
+        <img class="key-image" src="img/design.jpeg" alt="">
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-down">
+          <img class="key-image" src="img/website.jpeg" alt="">
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-up">
+        <img class="key-image" src="img/code.jpeg" alt="">
+      </div>
+    </div>
+
+      <div class="button-container">
+          <button class="see-more-btn">See more</button>
+      </div>
+    </div>
+
+    <!-- PROJECTS COMES HERE -->
+    <div class="container-fluid mt-5 pt-5 container-projects">
+      <div class="row">
+        <div class="rotate-h1">
+            <h1 class="h1-hc">Projects</h1>
         </div>
-        <div class="col-lg-4 col-sm-12 col-md-6 overlay-container" data-aos="fade-down">
-            <div class="overlay-div">
-              <h3>Web Design</h3>
+        <div class="col-lg-6 p-0">
+            <div class="overlay-project">
+                <i class="fab fa-instagram instagram-icon"></i>
+                <h3>133 impressions</h3>
+                <p>15 likes</p>
             </div>
-            <img class="key-image" src="img/key-image.jpeg" alt="">
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-6 col-6 overlay-container" data-aos="fade-up">
-              <div class="overlay-div">
-                <h3>Graphic Design</h3>
+          <img class="portfolio-image" src="img/project5.jpeg" alt="">
+        </div>
+
+        <div class="col-lg-6 p-0">
+            <div class="overlay-project">
+                <i class="fab fa-instagram instagram-icon"></i>
+                <h3>133 impressions</h3>
+                <p>15 likes</p>
+            </div>
+            <img class="portfolio-image" src="img/project2.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 p-0">
+              <div class="overlay-project">
+                  <i class="fab fa-instagram instagram-icon"></i>
+                  <h3>133 impressions</h3>
+                  <p>15 likes</p>
               </div>
-              <img class="key-image" src="img/key-image.jpeg" alt="">
+            <img class="portfolio-image" src="img/project2.jpeg" alt="">
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="overlay-project">
+              <i class="fab fa-instagram instagram-icon"></i>
+              <h3>133 impressions</h3>
+              <p>15 likes</p>
+            </div>
+              <img class="portfolio-image" src="img/project5.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="overlay-project">
+                    <i class="fab fa-instagram instagram-icon"></i>
+                    <h3>133 impressions</h3>
+                    <p>15 likes</p>
+                </div>
+              <img class="portfolio-image" src="img/project5.jpeg" alt="">
+            </div>
+
+            <div class="col-lg-6 p-0">
+                <div class="overlay-project">
+                    <i class="fab fa-instagram instagram-icon"></i>
+                    <h3>133 impressions</h3>
+                    <p>15 likes</p>
+                </div>
+                <img class="portfolio-image" src="img/project2.jpeg" alt="">
             </div>
           </div>
-          <div class="button-container">
-              <button class="see-more-btn">See more</button>
-          </div>
+    </div>
+
+
+    <!-- END OF CONTAINER PROJECTS -->
+
+    <!-- START OF CONTAINER OUR EXPERTISE -->
+
+    <div class="container-fluid top-div mt-5 pt-5">
+      <h1 class="title">We help <br>our clients <br>with 3 key things</h1>
+      <div class="row" style="width:80%; margin:100px auto; cursor:pointer;">
+        <div class="col-lg-4 icon-div">
+            <i class="fas fa-vector-square icon-code"></i>
+            <h1>Design</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="container-fluid footer">
-
-          <div class="socialMedia">
-               <button class="btn facebook"></button>
-               <button class="btn instagram"></button>
-               <button class="btn twitter"></button>
-               <button class="btn googlePlus"></button>
-               <button class="btn linkedin"></button>
-
-          </div>
-          
-          
-          <div class="buttonContainer">
-
-          <button class="btn portfolioButtonFooter">
-
-            <text>Portfolio</text>
-
-          </button>
-
-          <button class="btn contactButtonFooter">
-
-              <text>Contact Us</text>
-
-            </button>
-          </div>
-
-
-
-         <img class="brandLogo" src="img/logo-white.png">
-
-            
-        </div>
+<<<<<<< HEAD
         
       </div>
 
       
+=======
+        <div class="col-lg-4 icon-div">
+            <i class="fas fa-vector-square icon-code"></i>
+            <h1>Design</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-lg-4 icon-div">
+            <i class="fas fa-vector-square icon-code"></i>
+            <h1>Design</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- FOOTER COMES HERE -->
+  <div class="container-fluid footer">
+    <div class="socialMedia">
+          <button class="btn facebook"></button>
+          <button class="btn instagram"></button>
+          <button class="btn twitter"></button>
+          <button class="btn googlePlus"></button>
+          <button class="btn linkedin"></button>
+    </div>
+    <div class="buttonContainer">
+      <button class="btn portfolioButtonFooter">
+        Portfolio
+      </button>
+      <button class="btn contactButtonFooter">
+        Contact Us
+      </button>
+    </div>
+    <img class="brandLogo" src="img/logo-white.png">
+  </div>
+>>>>>>> 80bca8067e7e5e72e56849853f6a4db6f6886595
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-`  <script src="js/plugins.js"></script>
+  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   
   <!-- AOS INIT IS CALLED HERE -->
