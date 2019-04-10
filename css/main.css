@@ -24,7 +24,9 @@ html {
   font-family: 'Titillium Web'; }
 
 body {
-  font-family: 'Titillium Web'; }
+  font-family: 'Titillium Web';
+  background-image: url("../img/bg-01.png");
+  background-size: cover; }
 
 button {
   font-family: 'Track'; }
@@ -428,6 +430,42 @@ textarea {
   /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+@media only screen and (max-width: 1024px) {
+  .rotate-h1 {
+    display: none; }
+
+  body {
+    background-image: none; }
+
+  .container-first {
+    min-height: 900px;
+    width: 100%; }
+
+  .find-us-button {
+    background-color: #017fad;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+  .navbar {
+    padding: 0px; }
+
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px; }
+
+  .navbar-nav {
+    padding-left: 15px; }
+
+  .navbar-toggler {
+    margin-right: 10px; }
+
+  .navbar-brand {
+    padding-left: 10px; }
+
+  .hero-image .button-portfolio {
+    margin: 10px; }
+  .hero-image .information h1 {
+    font-size: 35px; } }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
