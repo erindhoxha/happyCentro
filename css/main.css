@@ -431,6 +431,9 @@ textarea {
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 @media only screen and (max-width: 1024px) {
+  .key-img-div {
+    margin-bottom: 10px; }
+
   .rotate-h1 {
     display: none; }
 
