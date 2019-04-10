@@ -1,5 +1,5 @@
 window.onscroll = () => {
-
+    // FOR THE PROJECTS TITLE COMING OUT AND ABOUT
     var hT = $('.see-more-btn').offset().top,
     hH = $('.see-more-btn').outerHeight(),
     wH = $(window).height(),
@@ -7,6 +7,8 @@ window.onscroll = () => {
     if (wS > (hT+hH-wH)){
       console.log('H1 on the view!');
       $(".rotate-h1").css('left','0px');
+    } else {
+      $(".rotate-h1").css('left','-250px');
     }
 
     if(this.scrollY <= 5) {

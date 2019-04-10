@@ -246,7 +246,7 @@ textarea {
 /* ========================== */
 .footer {
   background: #017fad;
-  height: 55vh;
+  height: 100%;
   width: 100%;
   margin-top: 5%; }
 
@@ -255,33 +255,35 @@ textarea {
   text-align: center; }
 
 .portfolioButtonFooter {
-  background-color: #017fad;
+  background-color: transparent;
   color: white;
-  padding: 10px 50px;
-  border: white 4px solid;
-  align-content: center;
-  text-align: center; }
+  border: white 2px solid;
+  border-radius: 0px;
+  transition: 0.3s ease;
+  padding: 10px;
+  margin: 5px; }
 
 .portfolioButtonFooter:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  color: white; }
 
 .contactButtonFooter {
   background-color: #017fad;
   color: white;
-  padding: 10px 50px;
-  margin-left: 5%;
-  border: white 4px solid;
-  align-content: center;
-  text-align: center; }
+  border: white 2px solid;
+  transition: 0.3s ease;
+  border-radius: 0px;
+  padding: 10px;
+  margin: 5px; }
 
 .contactButtonFooter:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  color: white; }
 
 .brandLogo {
-  z-index: 9999;
-  width: 20%;
-  margin-left: 40%;
-  margin-top: 2%; }
+  width: 200px;
+  display: block;
+  margin: 50px auto; }
 
 .socialMedia {
   padding-top: 5%;
