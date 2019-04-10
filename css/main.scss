@@ -6,7 +6,7 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-$mainColor: #017fad;
+$mainColor: #219dca;
 $mainColorTransparent: rgba(1, 172, 236, 0.7);
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
 /* ==========================================================================
@@ -19,6 +19,19 @@ $mainColorTransparent: rgba(1, 172, 236, 0.7);
 .portfolio-image {
     width:100%;
     max-height:500px;
+}
+.title {
+    font-weight: 900;
+}
+.container-projects {
+    padding-left:150px;
+}
+.top-div {
+    z-index:999999;
+    width:100%;
+    background-color:white;
+    padding-left:136px;
+    padding-bottom:100px;
 }
 
 html {
@@ -213,7 +226,7 @@ textarea {
         transform:rotate(270deg);
         position:fixed;
         top:50%;
-        z-index:99999;
+        z-index:-9;
         left: -300px;
         transition:0.5s ease;
     }
@@ -249,19 +262,20 @@ textarea {
             color:white;
         }
         .button-portfolio:hover {
-            background-color:transparent !important;
-            color:white;
+            background-color:white !important;
+            color:black;
         }
         .button-get-in-touch {
             background-color:transparent !important;
             border:1px solid white;
             border-radius:0px !important;
-            padding:16px 30px;
+            padding:15px 30px;
             box-shadow: rgba(34, 34, 34, 0.233) 5px 3px 5px;
             transition:0.3s ease;
         }
         .button-get-in-touch:hover {
-            background-color:transparent !important;
+            background-color:white !important;
+            color:black !important;
         }
         .information {
             h1 {
@@ -285,7 +299,6 @@ textarea {
     background: $mainColor;
     height: 100%;
     width: 100%;
-    margin-top: 5%;
 }
 
 .buttonContainer{
