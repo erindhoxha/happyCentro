@@ -170,7 +170,7 @@ textarea {
   transition: 0.2s ease-in; }
 
 .overlay-project:hover {
-  background-color: #017fad; }
+  background-color: rgba(1, 172, 236, 0.7); }
 
 .instagram-icon {
   color: white;
