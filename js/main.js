@@ -72,11 +72,14 @@ window.onscroll = () => {
 
   // REPLACE THIS !!
   // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
-	var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';	// Your unique key - https://www.behance.net/dev
-  var behanceUser = 'ellastoner'; 				// example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
-  var urlProject = 'https://api.behance.net/v2/users/' + behanceUser 
-  var urlProjects = 'https://api.behance.net/v2/users/' + behanceUser + '/projects?client_id=' + key;
 
+  // REPLACE THIS !!
+  // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
+  //var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';	// Your unique key - https://www.behance.net/dev
+  // https://www.behance.net/v2/projects/4889175?api_key=IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
+  var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
+
+  // USE JSONP - AJAX CALLS FOR THIS CALL
   fetch(`${urlProjects}`)
   .then((response) => response.json())
   .then((responseJson) => {
