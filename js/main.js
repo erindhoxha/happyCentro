@@ -34,19 +34,19 @@ window.onscroll = () => {
       name : 'Anam',
       id : '`1234545',
       impressions: 'xxx',
-      img : '',
+      img : 'images/anamPic.jpg',
     },
     {
       name : 'Erind',
       id : '`1234545',
       impressions: 'xxx',
-      img : '',
+      img : 'images/erindPic.jpg',
     },
     {
       name : 'Farisha',
       id : '`1234545',
       impressions: 'xxx',
-      img : '',
+      img : 'images/farishaPic.jpg',
     },
 
 
