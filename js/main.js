@@ -58,3 +58,18 @@ window.onscroll = () => {
 
 
     ];
+
+    // testing back to top scroll (check to see if erind has easier code)
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 50) {        
+          $('.backToTop').fadeIn(200);   
+      } else {
+          $('.backToTop').fadeOut(200);   
+      }
+  });
+    $('.backToTop').click(function() {      
+        $('body,html').animate({
+            scrollTop : 0                      
+        }, 500);
+    });
