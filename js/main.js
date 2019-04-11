@@ -1,16 +1,17 @@
 window.onscroll = () => {
 
     // ANAMS SCROLL TO TOP BUTTON - GOOOOOD WORK
-    if ($(this).scrollTop() >= 50) {        
-      $('.backToTop').fadeIn(200);   
-    } else {
-        $('.backToTop').fadeOut(200);   
-    }
-    $('.backToTop').click(function() {      
-      $('body,html').animate({
-          scrollTop : 0                      
-      }, 500);
-    });
+    // if ($(this).scrollTop() >= 50) {        
+    //   $('.backToTop').fadeIn(200);   
+    // } else {
+    //     $('.backToTop').fadeOut(200);   
+    // }
+
+    // $('.backToTop').click(function() {      
+    //   $('body,html').animate({
+    //       scrollTop : 0                      
+    //   }, 500);
+    // });
 
 
     // FOR THE PROJECTS TITLE COMING OUT AND ABOUT
@@ -67,3 +68,18 @@ window.onscroll = () => {
     }
   };
 
+
+
+  // REPLACE THIS !!
+  // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
+	var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';	// Your unique key - https://www.behance.net/dev
+  var behanceUser = 'ellastoner'; 				// example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
+  var urlProject = 'https://api.behance.net/v2/users/' + behanceUser 
+  var urlProjects = 'https://api.behance.net/v2/users/' + behanceUser + '/projects?client_id=' + key;
+
+  fetch(`${urlProjects}`)
+  .then((response) => response.json())
+  .then((responseJson) => {
+    console.log(responseJson);
+  })
+  console.log('working');
