@@ -46,7 +46,7 @@ html {
 
 body {
   font-family: 'Titillium Web';
-  background-image: url("../img/bg-01.png");
+  background-image: url("../../img/bg-01.png");
   background-size: cover; }
 
 button {
@@ -120,8 +120,8 @@ textarea {
   padding: 0.2em 0; }
 
 /* ==========================================================================
-  Erind's custom styles
-  ========================================================================== */
+   Erind's custom styles
+   ========================================================================== */
 .see-more-btn {
   background-color: transparent;
   color: black;
@@ -226,7 +226,7 @@ textarea {
     width: 140px; }
 
 .overlay {
-  background-image: url("../img/bg-hero.jpeg");
+  background-image: url("../../img/bg-hero.jpeg");
   height: 100vh; }
 
 .hero-image {
@@ -399,8 +399,8 @@ textarea {
   transform: scale(1.5); }
 
 /* ==========================================================================
-  Helper classes
-  ========================================================================== */
+   Helper classes
+   ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
@@ -476,8 +476,10 @@ textarea {
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+
 @media only screen and (max-width: 1024px) {
   .title {
     padding-left: 20px; }
@@ -489,42 +491,33 @@ textarea {
     padding-left: 0px !important; }
   .key-img-div {
     margin-bottom: 10px; }
-
   .rotate-h1 {
     display: none; }
-
   body {
     background-image: none; }
-
   .container-first {
     min-height: 900px;
     width: 100%; }
-
   .find-us-button {
     background-color: #219dca;
     margin-top: 10px;
     margin-bottom: 20px; }
-
   .navbar {
     padding: 0px; }
-
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px; }
-
   .navbar-nav {
     padding-left: 15px; }
-
   .navbar-toggler {
     margin-right: 10px; }
-
   .navbar-brand {
     padding-left: 10px; }
-
   .hero-image .button-portfolio {
     margin: 10px; }
   .hero-image .information h1 {
     font-size: 35px; } }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -540,52 +533,40 @@ textarea {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important; }
-
   a,
   a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-
   pre {
     white-space: pre-wrap !important; }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
   thead {
     display: table-header-group; }
-
   tr,
   img {
     page-break-inside: avoid; }
-
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; } }
-
-/*# sourceMappingURL=main.css.map */
