@@ -9,8 +9,10 @@ window.onscroll = () => {
     if (wS > (divSecond+divSecond2-wH)){
       $(".h1-hc").text('Users');
       $(".rotate-h1").css('left','30px');
+      $(".rotate-h1").css('transform','rotate(270deg)');
       console.log('H1 on the view!');
     } else if(wS > (hT+hH-wH)) {
+      $(".rotate-h1").css('transform','rotate(-90deg)');
       $(".rotate-h1").css('left','0px');
       $(".h1-hc").text('Projects');
       console.log('hi')
