@@ -12,8 +12,7 @@ window.onscroll = () => {
       }, 500);
     });
 
-    var div = $('.container-designers');
-    var bottom = div.offset().top + div.height();
+
     // FOR THE PROJECTS TITLE COMING OUT AND ABOUT
     // GET THE HEIGHT OF THE BUTTON
     var hT = $('.see-more-btn').offset().top,
@@ -28,13 +27,20 @@ window.onscroll = () => {
     // WINDOW SCROLL - THIS SCROLL
     wS = $(this).scrollTop();
     // IF THIS WHEN SCROLL IS BIGGER THAN THE OFFSET OF THE DIV, THEN DO THIS
-    if (wS > (divSecond+divSecond2-wH)){
+    // if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //   $(".rotate-h1").css('left','45%');
+    //   $(".rotate-h1").css('transform','rotate(0deg)');
+    //   $(".h1-hc").text('Contact us');
+    // }
+  if (wS > (divSecond+divSecond2-wH)){
+      $(".rotate-h1").show();
       $(".h1-hc").text('Designers');
       $(".rotate-h1").css('left','-10px');
       $(".rotate-h1").css('transform','rotate(270deg)');
       console.log('H1 on the view!');
     // ELSE IF WINDOW SCROLL IS BIGGER 
     } else if(wS > (hT+hH-wH)) {
+      $(".rotate-h1").show();
       $(".rotate-h1").css('transform','rotate(-90deg)');
       $(".rotate-h1").css('left','0px');
       $(".h1-hc").text('Projects');
@@ -61,5 +67,3 @@ window.onscroll = () => {
     }
   };
 
-
-  
