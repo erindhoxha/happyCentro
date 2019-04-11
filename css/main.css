@@ -1,9 +1,5 @@
 /*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
-.h1-designers {
-  color: red;
-  z-index: -999999999; }
-
 .container-designers {
   z-index: 9999999999999999;
   background-color: white; }
@@ -29,7 +25,8 @@
   font-weight: 900; }
 
 .container-projects {
-  padding-left: 150px; }
+  padding-left: 150px;
+  padding-bottom: 5%; }
 
 .icon-div p {
   font-size: 20px;
