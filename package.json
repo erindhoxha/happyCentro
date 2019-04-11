@@ -19,7 +19,9 @@
     "url": "https://github.com/erindhoxha/happyCentro/issues"
   },
   "homepage": "https://github.com/erindhoxha/happyCentro#readme",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.1.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
