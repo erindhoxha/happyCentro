@@ -2,12 +2,19 @@ window.onscroll = () => {
     // FOR THE PROJECTS TITLE COMING OUT AND ABOUT
     var hT = $('.see-more-btn').offset().top,
     hH = $('.see-more-btn').outerHeight(),
+    divSecond = $('.top-div').offset().top,
+    divSecond2 = $('.top-div').outerHeight()
     wH = $(window).height(),
     wS = $(this).scrollTop();
-    if (wS > (hT+hH-wH)){
+    if (wS > (divSecond+divSecond2-wH)){
+      $(".h1-hc").text('Users');
+      $(".rotate-h1").css('left','30px');
       console.log('H1 on the view!');
+    } else if(wS > (hT+hH-wH)) {
       $(".rotate-h1").css('left','0px');
-    } else {
+      $(".h1-hc").text('Projects');
+      console.log('hi')
+    }else {
       $(".rotate-h1").css('left','-250px');
     }
 

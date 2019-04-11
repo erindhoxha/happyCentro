@@ -21,6 +21,10 @@
   "homepage": "https://github.com/erindhoxha/happyCentro#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^4.11.0"
   }
 }
