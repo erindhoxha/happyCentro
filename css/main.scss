@@ -437,6 +437,32 @@ textarea {
     width:80%;
 }
 
+// testing go to top button //
+    .backToTop {
+        display: none; 
+        position: fixed; 
+        bottom: 20px; 
+        right: 30px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; 
+        padding: 5px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+        text-align: center;
+    }
+
+    .backToTop:hover {
+        transform: scale(1.5);
+      }
+
+
+
+
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */
