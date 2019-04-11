@@ -1,3 +1,4 @@
+  // adding object for designers
 
   designerDetails = 
     [ {

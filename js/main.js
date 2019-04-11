@@ -11,6 +11,9 @@ window.onscroll = () => {
           scrollTop : 0                      
       }, 500);
     });
+
+    var div = $('.container-designers');
+    var bottom = div.offset().top + div.height();
     // FOR THE PROJECTS TITLE COMING OUT AND ABOUT
     // GET THE HEIGHT OF THE BUTTON
     var hT = $('.see-more-btn').offset().top,
@@ -58,29 +61,5 @@ window.onscroll = () => {
     }
   };
 
-  // adding object for designers
-
-  designerDetails = 
-    [{
-      name : 'Anam',
-      id : '`1234545',
-      impressions: 'xxx',
-      img : 'images/anamPic.jpg',
-    },
-    {
-      name : 'Erind',
-      id : '`1234545',
-      impressions: 'xxx',
-      img : 'images/erindPic.jpg',
-    },
-    {
-      name : 'Farisha',
-      id : '`1234545',
-      impressions: 'xxx',
-      img : 'images/farishaPic.jpg',
-    },
-    ];
-
-    // testing back to top scroll (check to see if erind has easier code)
 
   
