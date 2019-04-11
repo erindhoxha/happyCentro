@@ -26,3 +26,28 @@ window.onscroll = () => {
       $(".navbar-brand img").css('filter', 'invert(1)');
     }
   };
+
+  // adding object for designers
+
+  designerDetails = 
+    [ {
+      name : 'Anam',
+      id : '`1234545',
+      impressions: 'xxx',
+      img : '',
+    },
+    {
+      name : 'Erind',
+      id : '`1234545',
+      impressions: 'xxx',
+      img : '',
+    },
+    {
+      name : 'Farisha',
+      id : '`1234545',
+      impressions: 'xxx',
+      img : '',
+    },
+
+
+    ];
