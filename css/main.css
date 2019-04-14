@@ -237,13 +237,21 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .hero-image .button-portfolio {
+  .hero-image .button-portfolio,
+  .hero-image .button-designers {
     padding: 15px 30px;
     border-radius: 0px;
     transition: 0.3s ease;
     background-color: transparent !important;
     border: 1px solid white;
     color: white; }
+  .hero-image .button-designers {
+    padding: 15px 30px;
+    border-radius: 0;
+    transition: .3s ease;
+    background-color: transparent !important;
+    border: 1px solid #fff;
+    color: #fff; }
   .hero-image .button-portfolio:hover {
     background-color: white !important;
     color: black; }

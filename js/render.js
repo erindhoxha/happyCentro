@@ -12,12 +12,7 @@ $(".designer-card").on('click', function() {
 })
 // END OF RENDER DESIGNERS
 
-// RENDER PROJECTS
-var sourceProjects  = $("#projects").html();
-var templateProjects = Handlebars.compile(sourceProjects);
-var contextProjects = projectDetails;
-var htmlProjects = templateProjects(contextProjects);
-$("#render-projects-here").html(htmlProjects);
+
 // END OF RENDER PROJECTSa
 
 $(".project-card").on('click', function() {

@@ -15,15 +15,16 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/minifiedCSS/main.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="home" style="background-image:none">
-    <nav class="navbar navbar-expand-lg navbar-dark navigation">
-        <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt=""></a>
+<body id="project" style="background-color:white; background-image:none;">
+
+    <nav class="navbar navbar-expand-lg text-black" style="position:relative">
+        <a class="navbar-brand" href="#"><img src="img/happycentro.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,106 +41,20 @@
           </ul>
         </div>
       </nav>
-      <!-- FIRST CONTAINER, HERO IMAGE -->
-      <div class="overlay">
-      <div class="container-fluid hero-image">
-        <div class="information">
-          <h1>A digital agency. We blend creativity and technology to transform and grow your client's businesses.</h1>
-          <button class="btn button-portfolio bg-white">Portfolio</button>
-          <button class="btn button-designers bg-white">Our Designers</button>
-          <button class="btn button-get-in-touch bg-primary text-white">Get in touch</button>
-        </div>
-        
-          <img class="backToTop" src="img/backToTop.png">
-      </div>
-      </div>
 
-  <!-- SECOND CONTAINER - 3 KEY THINGS -->
-  <div class="container-fluid container-first pt-4 p-5 mt-5 mb-5 pb-5 key-div">
-    <h1>We help <br>our clients <br>with 3 key things</h1>
-    <div class="row mt-4 pt-4">
-      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-up">
-        <img class="key-image" src="img/design.jpeg" alt="">
-      </div>
-
-      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-down">
-          <img class="key-image" src="img/website.jpeg" alt="">
-      </div>
-
-      <div class="col-lg-4 col-sm-12 col-md-6 key-img-div" data-aos="fade-up">
-        <img class="key-image" src="img/code.jpeg" alt="">
-      </div>
+ <div class="container-fluid pt-5">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Project 1</h1>
     </div>
-
-      <div class="button-container">
-          <button class="see-more-btn">See more</button>
-      </div>
+    <div class="col-lg-12">
+      <img style="width:100%" src="img/project.jpeg" alt="">
     </div>
-
-    <!-- TEXT ON THE LEFT -->
-    <div class="rotate-h1">
-      <h1 class="h1-hc">Projects</h1>
-    </div>
-    <!-- PROJECTS COMES HERE -->
-    <div class="container-fluid mt-5 pt-5 container-projects">
-      <div class="row" id="render-projects-here">
+  </div>
+ </div>
 
 
-      </div>
-    </div>
-
-
-    <!-- END OF CONTAINER PROJECTS -->
-
-    <!-- START OF CONTAINER OUR EXPERTISE -->
-
-    <div class="container-fluid top-div mt-5 pt-5">
-      <h1 class="title">We help <br>our clients <br>with 3 key things</h1>
-      <div class="row" style="width:80%; margin:100px auto; cursor:pointer;">
-        <div class="col-lg-4 icon-div">
-            <i class="fab fa-angrycreative icon-code"></i>
-            <h1>Design</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="col-lg-4 icon-div">
-            <i class="fab fa-angrycreative icon-code"></i>
-            <h1>Design</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="col-lg-4 icon-div">
-            <i class="fab fa-500px icon-code"></i>
-            <h1>Design</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-    </div>
-    <!-- PEOPLE COME HERE -->
-
-        <!-- PROJECTS COMES HERE -->
-        <div class="container-fluid mt-0 pt-5 container-projects container-designers">
-          <div class="row justify-content-end" id="render-designers-here">
-
-          </div>
-        </div>
-        <!-- SETUP GULP -->
-<!-- 
-
-npm -prefix 
-cd 93232323
-mkdir node_modules
-cit3-501m-22:node_modules 932400893$ npm set prefix /Users/932400893/node_modules 
-cit3-501m-22:node_modules 932400893$ npm get prefix
-$PATH
-cit3-501m-22:~ 932400893$ touch .bash_profile
-cit3-501m-22:~ 932400893$ ls -la
-export PATH="/Users/932400893/node_modules/bin:$PATH"
-
-# cit3-501m-22:~ 932400893$ open .
-# cit3-501m-22:~ 932400893$ source .bash_profile
-# cit3-501m-22:~ 932400893$ $PATH
- -->
-
-
+  
   <!-- FOOTER COMES HERE -->
   <div class="container-fluid footer">
     <div class="socialMedia">
@@ -172,17 +87,14 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
   
   <!-- PROJECTS -->
   <script id="projects" type="text/x-handlebars-template">
-    {{#each projects}}
+    {{#each project}}
     <div class="col-lg-6 p-0 project-card" data-nr={{@index}}>
-    <a href="project.html?id={{id}}">
-      <div class="overlay-project" id={{id}}>
+      <div class="overlay-project">
           <i class="fab fa-instagram instagram-icon"></i>
-          <h3>{{stats.appreciations}} impressions</h3>
-          <p>{{stats.comments}} comments</p>
-          <p>{{stats.views}} views</p>
+          <h3>133 impressions</h3>
+          <p>15 likes</p>
       </div>
-    <img class="portfolio-image" src="{{covers.[808]}}" alt="">
-  </a>
+    <img class="portfolio-image" src="{{img}}" alt="">
   </div>
   {{/each}}
 </script>
