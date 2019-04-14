@@ -50,7 +50,7 @@
         <div class="col-lg-8 text-left">
           <h1 class="name"></h1>
           <h2 class="occupation"></h2>
-          <h4 class="impressions"></h4>
+          <p class="impressions"></p>
 
         </div>
       </div>
@@ -98,10 +98,10 @@
   <script id="projects" type="text/x-handlebars-template">
     {{#each projects}}
     <div class="col-lg-6 p-0 project-card" data-nr={{@index}}>
-    <a href="project.html?id={{id}}">
+    <a href="project.html?id={{@index}}">
       <div class="overlay-project" id={{id}}>
-          <i class="fab fa-instagram instagram-icon"></i>
-          <h3>{{stats.appreciations}} impressions</h3>
+          <h2>{{name}}</h2>
+          <h5>{{stats.appreciations}} impressions</h5>
           <p>{{stats.comments}} comments</p>
           <p>{{stats.views}} views</p>
       </div>
@@ -116,7 +116,6 @@
     {{#each people}}
     <div class="col-lg-6 p-0 designer-card" data-nr={{@index}}>
       <div class="overlay-project">
-          <i class="fab fa-instagram instagram-icon"></i>
           <h3>{{impressions}} Impressions</h3>
           <p>{{likes}} likes</p>
       </div>
