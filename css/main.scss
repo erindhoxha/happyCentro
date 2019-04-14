@@ -283,13 +283,22 @@ textarea {
         display:flex;
         align-items:center;
         justify-content: center;
-        .button-portfolio {
+        .button-portfolio,
+        .button-designers {
             padding:15px 30px;
             border-radius:0px;
             transition:0.3s ease;
             background-color:transparent !important;
             border:1px solid white;
             color:white;
+        }
+        .button-designers {
+                padding: 15px 30px;
+                border-radius: 0;
+                transition: .3s ease;
+                background-color: transparent !important;
+                border: 1px solid #fff;
+                color: #fff;
         }
         .button-portfolio:hover {
             background-color:white !important;
