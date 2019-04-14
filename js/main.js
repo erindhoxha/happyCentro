@@ -69,7 +69,6 @@ window.onscroll = () => {
   // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
   //var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';	// Your unique key - https://www.behance.net/dev
   // https://www.behance.net/v2/projects/4889175?api_key=IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
-  var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
 
   // USE JSONP - AJAX CALLS FOR THIS CALL
   // fetch(`${urlProjects}`)
@@ -81,11 +80,13 @@ window.onscroll = () => {
 // REPLACE THIS !!
 
 $(function () {
+  // var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
 
   // REPLACE THIS !!
-  var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH'; // Your unique key - https://www.behance.net/dev
+  var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0';
+  // W29COrHpD8G2egDBiXrfXUxm6xotUZL4
+  // var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0'; // Your unique key - https://www.behance.net/dev
   var behanceUser = 'Happycentro'; // example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
-
   var urlProjects = 'https://api.behance.net/v2/users/' + behanceUser + '/projects?client_id=' + key;
 
   // ================================== HOME PAGE TEMPLATE (PROJECT DETAILS) ====================================================================
@@ -115,6 +116,15 @@ $(function () {
 
     }); // END ajax request
 
+    //   var urlUser = 'https://behance-mock-api.glitch.me/api/users';
+
+    //   fetch(urlUser)
+    //   .then((response) => response.json())
+    //   .then((responseJson) => {
+    //     console.log(responseJson);
+    //   })
+
+  // } // END HOMEPAGE template
     var urlUser = 'https://api.behance.net/v2/users/' + behanceUser + '?client_id=' + key;
 
     // AJAX request for USER INFO
@@ -151,3 +161,30 @@ $(function () {
   }
 });
 
+  // If the ID #index has been rendered on the page, then run this <code></code>
+  if ($('#designer').length > 0) {
+    var pageURL = new URL(document.location);
+    var params = pageURL.searchParams;
+    var id = params.get('id');
+    console.log(designerDetails.people[id])
+    console.log(id);
+    var person = designerDetails.people[id];
+
+    $(".name").text(person.name);
+    $(".occupation").text(person.occupation);
+    $(".impressions").text(`${person.likes} Likes - ${person.impressions} Impressions - ${person.followers} Followers`);
+    $(".img-profile").attr('src', person.img);
+
+      var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
+      fetch(urlUser)
+      .then((response) => response.json())
+      .then((res) => {
+        console.log(res);
+        var sourceProjects = $("#projects").html();
+        var templateProjects = Handlebars.compile(sourceProjects);
+        var contextProjects = {projects: res.projects};
+        var htmlProjects = templateProjects(contextProjects);
+        $("#render-projects-here").html(htmlProjects);
+      })
+
+  } // END HOMEPAGE template

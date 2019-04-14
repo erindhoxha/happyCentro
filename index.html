@@ -181,7 +181,7 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
           <p>{{stats.comments}} comments</p>
           <p>{{stats.views}} views</p>
       </div>
-    <img class="portfolio-image" src="{{covers.[808]}}" alt="">
+    <img class="project-image" src="{{covers.[808]}}" alt="">
   </a>
   </div>
   {{/each}}
@@ -191,12 +191,15 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
   <script id="designers" type="text/x-handlebars-template">
     {{#each people}}
     <div class="col-lg-4 p-0 designer-card" data-nr={{@index}}>
+      <a href="designer.html?id={{@index}}">
       <div class="overlay-project">
-          <i class="fab fa-instagram instagram-icon"></i>
-          <h3>{{impressions}} Impressions</h3>
+          <p>Our {{occupation}}</p>
+          <h2>{{name}}</h2>
+          <h4>{{impressions}} Impressions</h4>
           <p>{{likes}} likes</p>
       </div>
       <img class="portfolio-image" src="{{img}}" alt="">
+    </a>
     </div>
     {{/each}}
   </script>
