@@ -145,19 +145,15 @@ $(function () {
     var pageURL = new URL(document.location);
     var params = pageURL.searchParams;
     var id = params.get('id');
-    var urlProject = 'http://www.behance.net/v2/projects/' + id + '?api_key=' + key;
+    console.log(id);
     // AJAX request
-    $.ajax({
-      url: urlProject,
-      dataType: 'jsonp',
-      success: function (res) {
-        console.log(res);
-        var project = res.project;
-      },
-      error: function (res) {
-        $('<h1> Error!! </h1>').appendTo('body');
-      }
-    });
+    var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
+    fetch(urlUser)
+    .then((response) => response.json())
+    .then((res) => {
+      console.log(res.projects[id]);
+
+    })
   }
 });
 
@@ -173,7 +169,7 @@ $(function () {
     $(".name").text(person.name);
     $(".occupation").text(person.occupation);
     $(".impressions").text(`${person.likes} Likes - ${person.impressions} Impressions - ${person.followers} Followers`);
-    $(".img-profile").attr('src', person.img);
+    $(".img-profile").attr('src', person.imgCircle);
 
       var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
       fetch(urlUser)

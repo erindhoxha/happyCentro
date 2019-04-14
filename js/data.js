@@ -9,8 +9,9 @@
         img : 'img/person2.jpeg',
         likes:14,
         behanceID: '123124125172561257',
-        occupation:'Developer',
+        occupation:'UX/UI Designer | Front End Developer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Anam Khan',
@@ -21,6 +22,7 @@
         behanceID: '123124125172561257',
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Salamenka Chan',
@@ -28,26 +30,29 @@
         impressions: '442',
         img : 'img/person4.jpeg',
         likes:14,
-        occupation:'Developer',
+        occupation:'UX/UI Designer | Front End Developer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Felicia Veloro',
         id : 'lienke',
-        impressions: 'xxx',
+        impressions: '621',
         img : 'img/person.jpeg',
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Maria Galleo',
         id : 'lienke',
-        impressions: 'xxx',
+        impressions: '1251',
         img : 'img/person7.jpeg',
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Farisha',
@@ -57,6 +62,7 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Pet Petta',
@@ -66,6 +72,7 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'Trung True',
@@ -75,6 +82,7 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
       {
         name : 'True Boolean',
@@ -84,6 +92,7 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
+        imgCircle: 'img/person2.png'
       },
     ],
   }
@@ -96,7 +105,7 @@
       {
         name : 'Project HappyCentro',
         id : 'lienke',
-        impressions: 'xxx',
+        impressions: '123',
         img : 'img/project5.jpeg',
         likes:14,
         behanceID: '123124125172561257'
@@ -104,7 +113,7 @@
       {
         name : 'Erind',
         id : 'lienke',
-        impressions: 'xxx',
+        impressions: '442',
         img: 'img/project2.jpeg',
         likes:14,
         behanceID: '123124125172561257'
@@ -112,42 +121,42 @@
       {
         name : 'Farisha',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '525',
         img: 'img/project2.jpeg',
         likes:14
       },
       {
         name : 'Anam',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '2424',
         img : 'img/project5.jpeg',
         likes:14
       },
       {
         name : 'Erind',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '1212',
         img : 'img/project5.jpeg',
         likes:14
       },
       {
         name : 'Farisha',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '123',
         img : 'img/project2.jpeg',
         likes:14
       },
       {
         name : 'Anam',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '5252',
         img : 'img/person.jpeg',
         likes:14
       },
       {
         name : 'Erind',
         id : '`1234545',
-        impressions: 'xxx',
+        impressions: '123',
         img : 'img/person1.jpeg',
         likes:14
       },
