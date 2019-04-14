@@ -1,3 +1,5 @@
+
+    
     $(".button-portfolio").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".container-projects").offset().top
@@ -83,7 +85,7 @@ $(function () {
   // var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
 
   // REPLACE THIS !!
-  var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0';
+  var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';
   // W29COrHpD8G2egDBiXrfXUxm6xotUZL4
   // var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0'; // Your unique key - https://www.behance.net/dev
   var behanceUser = 'Happycentro'; // example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
@@ -101,6 +103,7 @@ $(function () {
       dataType: 'jsonp',
 
       success: function (res) {
+        $(".loader").fadeOut(700);
         console.log(res);
         var sourceProjects = $("#projects").html();
         var templateProjects = Handlebars.compile(sourceProjects);
@@ -126,7 +129,6 @@ $(function () {
 
   // } // END HOMEPAGE template
     var urlUser = 'https://api.behance.net/v2/users/' + behanceUser + '?client_id=' + key;
-
     // AJAX request for USER INFO
     $.ajax({
       url: urlUser,
@@ -146,13 +148,22 @@ $(function () {
     var params = pageURL.searchParams;
     var id = params.get('id');
     console.log(id);
+
     // AJAX request
     var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
     fetch(urlUser)
     .then((response) => response.json())
     .then((res) => {
       console.log(res.projects[id]);
-
+      var project = res.projects[id];
+      $(".name-of-project").text(project.name)
+      $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
+      $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
+      $(".tags").text(`${project.fields[0]} - ${project.fields[1]} - ${project.fields[2]}`)
+      $(".img-project").attr('src', project.covers.original);
+      $(".img-project-2").attr('src', project.modules[0].sizes.original);
+      $(".img-project-3").attr('src', project.modules[2].sizes.original);
+      $(".loader").fadeOut(700);
     })
   }
 });
@@ -170,6 +181,7 @@ $(function () {
     $(".occupation").text(person.occupation);
     $(".impressions").text(`${person.likes} Likes - ${person.impressions} Impressions - ${person.followers} Followers`);
     $(".img-profile").attr('src', person.imgCircle);
+    $(".description").text(`${person.description}`)
 
       var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
       fetch(urlUser)
@@ -181,6 +193,7 @@ $(function () {
         var contextProjects = {projects: res.projects};
         var htmlProjects = templateProjects(contextProjects);
         $("#render-projects-here").html(htmlProjects);
+        $(".loader").fadeOut(700);
       })
 
   } // END HOMEPAGE template

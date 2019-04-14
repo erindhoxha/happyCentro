@@ -13,6 +13,18 @@ $mainColorTransparent: rgba(1, 172, 236, 0.7);
 .img-profile {
     width:100%;
 }
+.loader {
+    display:flex;
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    background-color:white;
+    justify-content:center;
+    align-items:center;
+    img {
+        width:250px;
+    }
+}
 .h1-hc {
     font-weight: 900;
     transition:0.3s ease;
@@ -64,8 +76,6 @@ font-family:'Titillium Web';
 }
 body {
     font-family: 'Titillium Web';
-    background-image:url('../../img/bg-01.png');
-    background-size:cover;
 }
 button {
     font-family:'Track';

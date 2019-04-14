@@ -23,19 +23,13 @@
 
 <body id="designer" style="background-image:none">
   <nav class="navbar navbar-expand-lg navbar-dark navigation" style="position:relative; background-color:black;">
-      <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample05">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-          </li>
           <button class="find-us-button">HappyCentro Finder</button>
         </ul>
       </div>
@@ -51,7 +45,8 @@
           <h1 class="name"></h1>
           <h2 class="occupation"></h2>
           <p class="impressions"></p>
-
+          <p class="description"></p>
+          <button type="button">See behance</button>
         </div>
       </div>
     </div>
@@ -105,7 +100,7 @@
           <p>{{stats.comments}} comments</p>
           <p>{{stats.views}} views</p>
       </div>
-    <img class="portfolio-image" src="{{covers.[404]}}" alt="">
+    <img class="portfolio-image" src="{{covers.[original]}}" alt="">
   </a>
   </div>
   {{/each}}

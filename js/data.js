@@ -11,7 +11,8 @@
         behanceID: '123124125172561257',
         occupation:'UX/UI Designer | Front End Developer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Anam Khan',
@@ -22,7 +23,8 @@
         behanceID: '123124125172561257',
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Salamenka Chan',
@@ -32,7 +34,8 @@
         likes:14,
         occupation:'UX/UI Designer | Front End Developer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Felicia Veloro',
@@ -42,7 +45,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Maria Galleo',
@@ -52,7 +56,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Farisha',
@@ -62,7 +67,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Pet Petta',
@@ -72,7 +78,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'Trung True',
@@ -82,7 +89,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
         name : 'True Boolean',
@@ -92,7 +100,8 @@
         likes:14,
         occupation:'Designer',
         followers:'5million',
-        imgCircle: 'img/person2.png'
+        imgCircle: 'img/person2.png',
+        description:'Developer with five years of development experience in IT industries and marketing industries',
       },
     ],
   }

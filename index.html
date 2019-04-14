@@ -22,7 +22,10 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="home" style="background-image:none">
+<body id="home" style="">
+  <div class="loader">
+    <img src="img/eyes.gif" alt="">
+  </div>
     <nav class="navbar navbar-expand-lg navbar-dark navigation">
         <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,12 +34,6 @@
   
         <div class="collapse navbar-collapse" id="navbarsExample05">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link</a>
-            </li>
             <button class="find-us-button">HappyCentro Finder</button>
           </ul>
         </div>
@@ -177,7 +174,7 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
     <div class="col-lg-6 p-0 project-card" data-nr={{@index}}>
     <a href="project.html?id={{@index}}">
       <div class="overlay-project" id={{id}}>
-          <i class="fab fa-instagram instagram-icon"></i>
+          <h2 style="text-align:center; width:90%; margin:5px auto;">{{name}}</h1>
           <h3>{{stats.appreciations}} impressions</h3>
           <p>{{stats.comments}} comments</p>
           <p>{{stats.views}} views</p>
