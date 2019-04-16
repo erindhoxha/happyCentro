@@ -190,9 +190,14 @@ $(function () {
         $(".content-title").text(project.name)
         $(".img-project-2").attr('src', project.modules[0].sizes.original);
         $(".img-project-6").attr('src', project.modules[0].sizes.original);
+        $(".img-project-7").attr('src', project.modules[0].sizes.original);
         $(".img-project-3").attr('src', project.modules[1].sizes.original);
+        $(".img-project-4").attr('src', project.modules[2].sizes.original);
         $(".img-project-5").attr('src', project.modules[2].sizes.original);
         $(".img-project-6").attr('src', project.modules[2].sizes.original);
+        setTimeout(() => {
+        $(".img-project-6").css('left', '-25%');
+        }, 100);
         $(".loader").fadeOut(700);
         $(".tags-10").text(`${project.tags[0]} - ${project.tags[1]} - ${project.tags[2]} - ${project.tags[3]} - ${project.tags[4]}`)
       })
@@ -234,6 +239,9 @@ $(function () {
           $(".tags").text(`${projectObject.fields[0]} - ${projectObject.fields[1]} - ${projectObject.fields[2]}`)
           $(".img-project").attr('src', projectObject.covers.original);
           $(".img-project-2").attr('src', projectObject.covers.original);
+          setTimeout(() => {
+          $(".img-project-2").css('left','85%')
+          }, 200);
           // $(".loader").fadeOut(700);
         },
         // if the ajax request fails do these things as a fallback

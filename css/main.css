@@ -436,6 +436,11 @@ textarea {
   border: 1px solid white;
 }
 
+.cl-hp {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .overlay-project {
   height: 100%;
   position: absolute;
@@ -451,7 +456,7 @@ textarea {
 }
 
 .overlay-project:hover {
-  background-color: rgba(1, 172, 236, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .instagram-icon {
@@ -770,13 +775,19 @@ textarea {
   clear: both;
 }
 
+.imgproject {
+  width: 80%;
+  margin: 50px auto;
+  transition: 0.5s ease;
+}
+
 .img-project-2 {
   position: absolute;
   margin: 50px auto;
   bottom: 16%;
   width: 145% !important;
   z-index: -1;
-  left: 85%;
+  left: 0%;
   box-shadow: 5px 5px 20px #1a1a1a3b;
   animation: float 2s ease-in-out infinite;
 }
@@ -784,7 +795,7 @@ textarea {
 .img-project-6 {
   position: absolute;
   z-index: -1;
-  left: -30%;
+  left: 0%;
   top: 110px;
   width: 50% !important;
   animation: float 2s ease-in-out infinite;
