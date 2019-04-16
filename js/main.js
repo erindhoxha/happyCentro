@@ -1,4 +1,11 @@
+  
+$(window).on('load', function() {
+  $(window).scrollTop(0);
+});
 
+  setTimeout(() => {
+    $(".loader").fadeOut(700);
+  }, 2200);
     
     $(".button-portfolio, .see-more-btn").click(function () {
       $([document.documentElement, document.body]).animate({
@@ -99,7 +106,7 @@ $(function () {
   // var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
 
   // REPLACE THIS !!
-  var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';
+  var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0';
   // W29COrHpD8G2egDBiXrfXUxm6xotUZL4
   // var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0'; // Your unique key - https://www.behance.net/dev
   var behanceUser = 'Happycentro'; // example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
@@ -117,7 +124,6 @@ $(function () {
       dataType: 'jsonp',
 
       success: function (res) {
-        $(".loader").fadeOut(700);
         console.log(res);
         var sourceProjects = $("#projects").html();
         var templateProjects = Handlebars.compile(sourceProjects);
@@ -131,26 +137,18 @@ $(function () {
         $('<h1 class="error-msg"> Error, too many requests. We\'ll be back! </h1>').appendTo('body');
       }
 
-    }); // END ajax request
+    });
 
-    //   var urlUser = 'https://behance-mock-api.glitch.me/api/users';
-
-    //   fetch(urlUser)
-    //   .then((response) => response.json())
-    //   .then((responseJson) => {
-    //     console.log(responseJson);
-    //   })
-
-  // } // END HOMEPAGE template
-    var urlUser = 'https://api.behance.net/v2/users/' + behanceUser + '?client_id=' + key;
-    // AJAX request for USER INFO
-    $.ajax({
-      url: urlUser,
-      dataType: 'jsonp',
-      success: function (res) {
-        console.log(res);
-      }
-    }); // END ajax request
+    
+    // var urlUser = 'https://api.behance.net/v2/users/' + behanceUser + '?client_id=' + key;
+    // // AJAX request for USER INFO
+    // $.ajax({
+    //   url: urlUser,
+    //   dataType: 'jsonp',
+    //   success: function (res) {
+    //     console.log(res);
+    //   }
+    // }); // END ajax request
 
   } // END HOMEPAGE template
 

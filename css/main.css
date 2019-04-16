@@ -6,7 +6,6 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 .img-profile {
   width: 100%;
 }
@@ -823,28 +822,11 @@ h3 {
   left: 80%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
 .container-form {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-}
-
-#contact input[type=text], #contact input[type=email], #contact input[type=tel], #contact input[type=url], #contact textarea, #contact button[type=submit] {
-  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 #contact {
@@ -941,6 +923,15 @@ fieldset {
 @media only screen and (max-width: 1024px) {
   .rotate-h1 {
     display: none !important;
+  }
+
+  .img-profile {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  .profile {
+    text-align: center !important;
   }
 }
 
