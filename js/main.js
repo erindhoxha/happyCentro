@@ -183,12 +183,16 @@ $(function () {
         $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
         $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
         $(".tags").text(`${project.fields[0]} - ${project.fields[1]} - ${project.fields[2]}`)
+        $(".content-text").text(`${project.fields[0]} - ${project.fields[1]} - ${project.fields[2]}`)
         $(".name-of-the-project").text(`Tags`)
         // $(".img-project").attr('src', project.covers.original);
         $(".content-image").attr('src', project.covers.original);
         $(".content-title").text(project.name)
         $(".img-project-2").attr('src', project.modules[0].sizes.original);
-        $(".img-project-3").attr('src', project.modules[2].sizes.original);
+        $(".img-project-6").attr('src', project.modules[0].sizes.original);
+        $(".img-project-3").attr('src', project.modules[1].sizes.original);
+        $(".img-project-5").attr('src', project.modules[2].sizes.original);
+        $(".img-project-6").attr('src', project.modules[2].sizes.original);
         $(".loader").fadeOut(700);
         $(".tags-10").text(`${project.tags[0]} - ${project.tags[1]} - ${project.tags[2]} - ${project.tags[3]} - ${project.tags[4]}`)
       })
