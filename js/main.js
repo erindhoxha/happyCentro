@@ -1,6 +1,6 @@
 
     
-    $(".button-portfolio").click(function () {
+    $(".button-portfolio, .see-more-btn").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".container-projects").offset().top
       }, 1000);
@@ -9,6 +9,12 @@
     $(".button-designers").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".container-designers").offset().top
+      }, 1000);
+    });
+
+    $(".button-get-in-touch").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#contact").offset().top
       }, 1000);
     });
 
@@ -22,12 +28,20 @@ window.onscroll = () => {
     divSecond = $('.top-div').offset().top,
     // THE TOP DIV PIXEL WHEN WE SCROLL TO SPIN
     divSecond2 = $('.top-div').outerHeight()
+
+    // THE DIV WHERE WE WANT TO SPIN THE "PROJECTS" TITLE
+    contactForm = $('.container-form').offset().top,
+    // THE TOP DIV PIXEL WHEN WE SCROLL TO SPIN
+    contactForm2 = $('.container-form').outerHeight()
     // WINDOW HEIGHT
     wH = $(window).height(),
     // WINDOW SCROLL - THIS SCROLL
     wS = $(this).scrollTop();
-
-  if (wS > (divSecond+divSecond2-wH)){
+  if (wS > (contactForm+contactForm2-wH)) {
+    $(".rotate-h1").hide(200);
+    $(".rotate-h1").css('transform','rotate(90deg)');
+  }
+  else if (wS > (divSecond+divSecond2-wH)){
       $(".rotate-h1").show();
       $(".h1-hc").text('Designers');
       $(".rotate-h1").css('left','-10px');
