@@ -3,7 +3,7 @@
   designerDetails = {
     people: [
       {
-        name : 'George Clooney',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '432',
         img : 'img/person2.jpeg',
@@ -15,7 +15,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Anam Khan',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '122',
         img : 'img/person1.jpeg',
@@ -27,7 +27,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Salamenka Chan',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '442',
         img : 'img/person4.jpeg',
@@ -38,7 +38,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Felicia Veloro',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '621',
         img : 'img/person.jpeg',
@@ -49,7 +49,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Maria Galleo',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '1251',
         img : 'img/person7.jpeg',
@@ -60,7 +60,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Farisha',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '421',
         img : 'img/marcelo.jpeg',
@@ -71,7 +71,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Pet Petta',
+        name : 'John Doe',
         id : '`1234545',
         impressions: '522',
         img : 'img/peron4.jpeg',
@@ -82,7 +82,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'Trung True',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '525',
         img : 'img/person1.jpeg',
@@ -93,7 +93,7 @@
         description:'Developer with five years of development experience in IT industries and marketing industries',
       },
       {
-        name : 'True Boolean',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '122',
         img : 'img/person5.jpeg',
@@ -112,7 +112,7 @@
   projectDetails = {
     project: [
       {
-        name : 'Project HappyCentro',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '123',
         img : 'img/project5.jpeg',
@@ -120,7 +120,7 @@
         behanceID: '123124125172561257'
       },
       {
-        name : 'Erind',
+        name : 'John Doe',
         id : 'lienke',
         impressions: '442',
         img: 'img/project2.jpeg',
@@ -128,14 +128,14 @@
         behanceID: '123124125172561257'
       },
       {
-        name : 'Farisha',
+        name : 'John Doe',
         id : '`1234545',
         impressions: '525',
         img: 'img/project2.jpeg',
         likes:14
       },
       {
-        name : 'Anam',
+        name : 'John Doe',
         id : '`1234545',
         impressions: '2424',
         img : 'img/project5.jpeg',
@@ -163,7 +163,7 @@
         likes:14
       },
       {
-        name : 'Erind',
+        name : 'John Doe',
         id : '`1234545',
         impressions: '123',
         img : 'img/person1.jpeg',

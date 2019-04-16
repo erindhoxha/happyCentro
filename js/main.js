@@ -7,7 +7,7 @@ $(window).on('load', function() {
     $(".loader").fadeOut(700);
   }, 2200);
     
-    $(".button-portfolio, .see-more-btn").click(function () {
+    $(".button-portfolio, .see-more-btn, .portfolioButtonFooter").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".container-projects").offset().top
       }, 1000);
@@ -19,7 +19,7 @@ $(window).on('load', function() {
       }, 1000);
     });
 
-    $(".button-get-in-touch").click(function () {
+    $(".button-get-in-touch, .contactButtonFooter").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $("#contact").offset().top
       }, 1000);
@@ -166,8 +166,19 @@ $(function () {
       fetch(urlUser)
       .then((response) => response.json())
       .then((res) => {
+        // RENDER PROJECTS INSIDE THE PROJECT PAGE OF THE HAPPYCENTRO
         console.log(res.projects[id]);
         var project = res.projects[id];
+        var secs = `${project.created_on}`;
+
+        // CONVERT TO A DATE
+        console.log(new Date(secs * 1000));
+        var date = new Date(secs * 1000);
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.toString().split(' ')[2];
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        $(".date").text(`Created on ${day} ${months[month]}, ${year}`)
         $(".name-of-project").text(project.name)
         $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
         $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)

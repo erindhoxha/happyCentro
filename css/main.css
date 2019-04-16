@@ -1,16 +1,28 @@
 /*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
 .img-profile {
   width: 100%;
 }
 
 .loader {
+  z-index: 99999;
   display: flex;
   position: fixed;
   height: 100vh;
@@ -47,6 +59,7 @@
 
 .container-projects {
   padding-left: 150px;
+  animation: float 2s ease-in-out infinite;
 }
 
 .icon-div p {
@@ -58,7 +71,7 @@
   z-index: 999999;
   width: 100%;
   padding-left: 136px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .top-div .row {
   margin-top: 100px;
@@ -85,6 +98,7 @@ button {
 
 .icon-code {
   margin-bottom: 20px;
+  animation: float 2s ease-in-out infinite;
 }
 
 .button-see {
@@ -586,6 +600,19 @@ textarea {
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+@media only screen and (max-width: 600px) {
+  .overlay, .hero-image {
+    min-height: 750px;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .information {
+    padding: 0px !important;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .title {
     padding-left: 20px;
@@ -741,6 +768,7 @@ h3 {
 }
 
 .content {
+  animation: float 2s ease-in-out infinite;
   position: relative;
   width: 90%;
   max-width: 850px;
