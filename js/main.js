@@ -148,23 +148,73 @@ $(function () {
     var params = pageURL.searchParams;
     var id = params.get('id');
     console.log(id);
+    if (id) {
+      // AJAX request
+      var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
+      fetch(urlUser)
+      .then((response) => response.json())
+      .then((res) => {
+        console.log(res.projects[id]);
+        var project = res.projects[id];
+        $(".name-of-project").text(project.name)
+        $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
+        $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
+        $(".tags").text(`${project.fields[0]} - ${project.fields[1]} - ${project.fields[2]}`)
+        $(".name-of-the-project").text(`Tags`)
+        // $(".img-project").attr('src', project.covers.original);
+        $(".content-image").attr('src', project.covers.original);
+        $(".content-title").text(project.name)
+        $(".img-project-2").attr('src', project.modules[0].sizes.original);
+        $(".img-project-3").attr('src', project.modules[2].sizes.original);
+        $(".loader").fadeOut(700);
+        $(".tags-10").text(`${project.tags[0]} - ${project.tags[1]} - ${project.tags[2]} - ${project.tags[3]} - ${project.tags[4]}`)
+      })
+    }
 
-    // AJAX request
-    var urlUser = 'https://behance-mock-api.glitch.me/api/projects';
-    fetch(urlUser)
-    .then((response) => response.json())
-    .then((res) => {
-      console.log(res.projects[id]);
-      var project = res.projects[id];
-      $(".name-of-project").text(project.name)
-      $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
-      $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
-      $(".tags").text(`${project.fields[0]} - ${project.fields[1]} - ${project.fields[2]}`)
-      $(".img-project").attr('src', project.covers.original);
-      $(".img-project-2").attr('src', project.modules[0].sizes.original);
-      $(".img-project-3").attr('src', project.modules[2].sizes.original);
-      $(".loader").fadeOut(700);
-    })
+    var pageURL = new URL(document.location);
+    var params = pageURL.searchParams;
+    var project = params.get('project');
+    console.log(project);
+    if (project) {
+          // AJAX request for PROJECT INFO
+    $.ajax({
+        url: urlProjects,
+        dataType: 'jsonp',
+        success: function (res) {
+          $(".loader").fadeOut(700);
+          console.log(res.projects[project]);
+          var projectObject = res.projects[project];
+          $(".name-of-project").text(projectObject.name)
+          console.log(projectObject.colors[0].r)
+          console.log(projectObject.colors[0].g)
+          console.log(projectObject.colors[0].b)
+          var r = projectObject.colors[0].r;
+          var g = projectObject.colors[0].g;
+          var b = projectObject.colors[0].b;
+           $(".tags-10").text(`${projectObject.owners[0].city} - ${projectObject.owners[0].company}`);
+          $(".content-image").attr('src', projectObject.covers.original);
+          $(".content-title").text(projectObject.name)
+          $(".content-text").text(`${projectObject.fields[0]} - ${projectObject.fields[1]} - ${projectObject.fields[2]}`)
+           $(".tags-11").text(`${projectObject.owners[0].website}`);
+          var total = r + g + b;
+          // $('body').css('background-color', `rgba(${r}, ${g}, ${b}, 0.8)`)
+          // if (total < 400) {
+          //   $(".name-of-project, .likes, .tags, h1, p").css('color', 'white');
+          // }
+          $(".name-of-the-project").text(`${projectObject.slug}`)
+          $(".likes").text(`${projectObject.stats.appreciations} appreciations - ${projectObject.stats.comments} comments - ${projectObject.stats.views} views`)
+          // $(".likes").text(`${project.stats.appreciations} appreciations - ${project.stats.comments} comments - ${project.stats.views} views`)
+          $(".tags").text(`${projectObject.fields[0]} - ${projectObject.fields[1]} - ${projectObject.fields[2]}`)
+          $(".img-project").attr('src', projectObject.covers.original);
+          $(".img-project-2").attr('src', projectObject.covers.original);
+          // $(".loader").fadeOut(700);
+        },
+        // if the ajax request fails do these things as a fallback
+        error: function (res) {
+          $('<h1 class="error-msg"> Error, too many requests. We\'ll be back! </h1>').appendTo('body');
+        }
+      }); // END ajax request
+    }
   }
 });
 
