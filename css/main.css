@@ -95,16 +95,19 @@
 }
 
 .container-form {
+  z-index: 999999;
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding-bottom: 100px;
+  background-color: white;
 }
 
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  margin: 50px 0;
+  margin: 0px 0;
 }
 
 #contact h3 {
@@ -1008,6 +1011,18 @@ h3 {
   .profile {
     text-align: center !important;
   }
+}
+#myChart {
+  width: 100px;
+}
+
+#chart-container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 350px;
+  padding-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

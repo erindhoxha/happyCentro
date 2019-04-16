@@ -1,11 +1,12 @@
   
-$(window).on('load', function() {
-  $(window).scrollTop(0);
-});
-
+// $(window).on('load', function() {
+//   $(window).scrollTop(0);
+// });
+  // GLOBAL OBJECTS
+  var labels = [];
   setTimeout(() => {
     $(".loader").fadeOut(700);
-  }, 2200);
+  }, 0000);
     
     $(".button-portfolio, .see-more-btn, .portfolioButtonFooter").click(function () {
       $([document.documentElement, document.body]).animate({
@@ -40,14 +41,19 @@ window.onscroll = () => {
     contactForm = $('.container-form').offset().top,
     // THE TOP DIV PIXEL WHEN WE SCROLL TO SPIN
     contactForm2 = $('.container-form').outerHeight()
+
+    chart = $('#chart-container').offset().top;
+    chart2 = $('#chart-container').outerHeight()
     // WINDOW HEIGHT
     wH = $(window).height(),
     // WINDOW SCROLL - THIS SCROLL
     wS = $(this).scrollTop();
-  if (wS > (contactForm+contactForm2-wH)) {
-    $(".rotate-h1").hide(200);
-    $(".rotate-h1").css('transform','rotate(90deg)');
-  }
+    if (wS > (chart+divSecond2-wH - 300)) {
+      $(".rotate-h1").css('left','0px');
+      $(".h1-hc").text('Graph');
+        $(".rotate-h1").css('transform','rotate(-90deg)');
+    }
+
   else if (wS > (divSecond+divSecond2-wH)){
       $(".rotate-h1").show();
       $(".h1-hc").text('Designers');
@@ -125,6 +131,13 @@ $(function () {
 
       success: function (res) {
         console.log(res);
+        
+        var projects = res.projects.slice(0, 10);
+
+        projects.forEach(function(item){
+          labels.push(item.stats.views)
+        });
+  
         var sourceProjects = $("#projects").html();
         var templateProjects = Handlebars.compile(sourceProjects);
         var contextProjects = {projects: res.projects.slice(0,20)};
@@ -282,3 +295,47 @@ $(function () {
       })
 
   } // END HOMEPAGE template
+
+
+
+
+  function renderChart(labels) {
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: [1,2,3,4,5],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+                'rgba(255, 159, 64, 0.5)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+}
+

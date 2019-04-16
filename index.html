@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 </head>
 
 <body id="home" style="">
@@ -164,6 +165,10 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
 # cit3-501m-22:~ 932400893$ source .bash_profile
 # cit3-501m-22:~ 932400893$ $PATH
  -->
+ <div id="chart-container">
+  <canvas id="myChart" width="400" height="100"></canvas>
+ </div>
+
 
   <div class="container-form">
     <form id="contact" action="" method="post">
@@ -212,6 +217,7 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
     </div>
     <img class="brandLogo" src="img/logo-white.png">
   </div>
+
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
@@ -265,6 +271,7 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
 
   <script src="js/render.js"></script>
   <script src="js/api.js"></script>
+  <script src="js/chart.js"></script>
 
   <!-- AOS INIT IS CALLED HERE -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

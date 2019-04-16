@@ -819,3 +819,15 @@ textarea {
   }
 
 //   ANIMATION
+
+#myChart {
+    width:100px;
+}
+#chart-container {
+    height:60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:350px;
+    padding-top:150px;
+}
