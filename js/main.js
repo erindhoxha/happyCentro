@@ -4,6 +4,7 @@
 // });
   // GLOBAL OBJECTS
   var labels = [];
+  var names = [];
   setTimeout(() => {
     $(".loader").fadeOut(700);
   }, 0000);
@@ -51,7 +52,9 @@ window.onscroll = () => {
     if (wS > (chart+divSecond2-wH - 300)) {
       $(".rotate-h1").css('left','0px');
       $(".h1-hc").text('Graph');
-        $(".rotate-h1").css('transform','rotate(-90deg)');
+      $(".rotate-h1").css('transform','rotate(-90deg)');
+    } else if (wS > (contactForm+contactForm2-wH - 300)) {
+      $(".rotate-h1").hide(300);
     }
 
   else if (wS > (divSecond+divSecond2-wH)){
@@ -132,12 +135,16 @@ $(function () {
       success: function (res) {
         console.log(res);
         
-        var projects = res.projects.slice(0, 10);
+        var projects = res.projects.slice(0, 6);
 
         projects.forEach(function(item){
           labels.push(item.stats.views)
+          names.push(item.name);
         });
-  
+        console.log(labels);
+        console.log(names);
+        renderChart(labels, names)
+
         var sourceProjects = $("#projects").html();
         var templateProjects = Handlebars.compile(sourceProjects);
         var contextProjects = {projects: res.projects.slice(0,20)};
@@ -299,41 +306,38 @@ $(function () {
 
 
 
-  function renderChart(labels) {
+  function renderChart(labels, names) {
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: [1,2,3,4,5],
+        labels: names,
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: labels,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.5)',
-                'rgba(54, 162, 235, 0.5)',
-                'rgba(255, 206, 86, 0.5)',
-                'rgba(75, 192, 192, 0.5)',
-                'rgba(153, 102, 255, 0.5)',
-                'rgba(255, 159, 64, 0.5)'
+                '#29364a',
+                '#d82b61',
+                '#bdd8d1',
+                '#008b94',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)'
             ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            // borderColor: [
+            //     'rgba(255, 99, 132, 1)',
+            //     'rgba(54, 162, 235, 1)',
+            //     'rgba(255, 206, 86, 1)',
+            //     'rgba(75, 192, 192, 1)',
+            //     'rgba(153, 102, 255, 1)',
+            //     'rgba(255, 159, 64, 1)'
+            // ],
             borderWidth: 1
         }]
     },
     options: {
         scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
+          display:false,
+
         }
     }
 });

@@ -205,6 +205,17 @@ fieldset {
   width: 100%;
 }
 
+#project-views-text {
+  padding-left: 130px;
+  font-weight: 900;
+}
+
+#project-views-text-paragraph {
+  padding-left: 130px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
 .loader {
   z-index: 99999;
   display: flex;
@@ -845,6 +856,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 1024px) {
+  #project-views-text, #project-views-text-paragraph {
+    padding-left: 20px !important;
+  }
+
+  #chart-container {
+    width: 100% !important;
+  }
+
   .title {
     padding-left: 20px;
   }
@@ -1017,12 +1036,22 @@ h3 {
 }
 
 #chart-container {
-  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 350px;
-  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.chart-container-full-screen {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.container-form {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,10 +10,6 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -165,9 +161,14 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
 # cit3-501m-22:~ 932400893$ source .bash_profile
 # cit3-501m-22:~ 932400893$ $PATH
  -->
- <div id="chart-container">
-  <canvas id="myChart" width="400" height="100"></canvas>
+ <h1 id="project-views-text">Project views</h1><br>
+ <p id="project-views-text-paragraph">This takes the data from the Behance views of 7 latest projects and compares them in the pie chart.</p>
+ <div class="chart-container-full-screen">
+    <div id="chart-container">
+        <canvas id="myChart" width="200" height="100"></canvas>
+       </div>
  </div>
+
 
 
   <div class="container-form">
@@ -265,14 +266,8 @@ export PATH="/Users/932400893/node_modules/bin:$PATH"
     </div>
     {{/each}}
   </script>
-
-
-
-
   <script src="js/render.js"></script>
-  <script src="js/api.js"></script>
   <script src="js/chart.js"></script>
-
   <!-- AOS INIT IS CALLED HERE -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
