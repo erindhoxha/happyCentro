@@ -1,14 +1,14 @@
-  
-// $(window).on('load', function() {
-//   $(window).scrollTop(0);
-// });
+$(".loader").show();
   // GLOBAL OBJECTS
   var labels = [];
   var names = [];
   setTimeout(() => {
     $(".loader").fadeOut(700);
-  }, 0000);
-    
+  }, 2200);
+      
+    $(window).on('load', function() {
+      $(window).scrollTop(0);
+    });
     $(".button-portfolio, .see-more-btn, .portfolioButtonFooter").click(function () {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".container-projects").offset().top
