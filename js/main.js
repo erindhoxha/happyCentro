@@ -93,23 +93,8 @@ window.onscroll = () => {
   };
 
 
-
-  // REPLACE THIS !!
   // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
-
-  // REPLACE THIS !!
-  // kevins key = IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
-  //var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';	// Your unique key - https://www.behance.net/dev
-  // https://www.behance.net/v2/projects/4889175?api_key=IVYyhF9w3EpIfe27nf09ehAcaywGzpM0
-
-  // USE JSONP - AJAX CALLS FOR THIS CALL
-  // fetch(`${urlProjects}`)
-  // .then((response) => response.json())
-  // .then((responseJson) => {
-  //   console.log(responseJson);
-  // })
-  // console.log('working');
-// REPLACE THIS !!
+  //var key = 'SCJnOBwjJqgpwxIybOHvs0cUt0XRrydH';
 
 $(function () {
   // var urlProjects = 'https://behance-mock-api.glitch.me/api/projects';
@@ -117,8 +102,8 @@ $(function () {
   // REPLACE THIS !!
   var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0';
   // W29COrHpD8G2egDBiXrfXUxm6xotUZL4
-  // var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0'; // Your unique key - https://www.behance.net/dev
-  var behanceUser = 'Happycentro'; // example - Manuel from Yoobee Creative Catchup #3 | ellastoner370c
+  // var key = 'IVYyhF9w3EpIfe27nf09ehAcaywGzpM0';
+  var behanceUser = 'Happycentro';
   var urlProjects = 'https://api.behance.net/v2/users/' + behanceUser + '/projects?client_id=' + key;
 
   // ================================== HOME PAGE TEMPLATE (PROJECT DETAILS) ====================================================================
@@ -156,24 +141,9 @@ $(function () {
       error: function (res) {
         $('<h1 class="error-msg"> Error, too many requests. We\'ll be back! </h1>').appendTo('body');
       }
-
     });
-
-    
-    // var urlUser = 'https://api.behance.net/v2/users/' + behanceUser + '?client_id=' + key;
-    // // AJAX request for USER INFO
-    // $.ajax({
-    //   url: urlUser,
-    //   dataType: 'jsonp',
-    //   success: function (res) {
-    //     console.log(res);
-    //   }
-    // }); // END ajax request
-
   } // END HOMEPAGE template
-
   // ================================== PROJECT PAGE TEMPLATE ====================================================================
-
   // If the ID #project has been rendered on the page, then run this code
   if ($('#project').length > 0) {
     var pageURL = new URL(document.location);
@@ -272,7 +242,6 @@ $(function () {
     }
   }
 });
-
   // If the ID #index has been rendered on the page, then run this <code></code>
   if ($('#designer').length > 0) {
     var pageURL = new URL(document.location);
