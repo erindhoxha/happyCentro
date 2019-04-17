@@ -502,7 +502,8 @@ textarea {
 }
 
 .overlay {
-  background-image: url("../../img/bg-hero.jpeg");
+  background-image: url("../img/bg-hero.jpeg");
+  background-color: black;
   height: 100vh;
 }
 
