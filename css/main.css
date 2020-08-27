@@ -609,9 +609,11 @@ textarea {
 }
 
 .brandLogo {
-  width: 200px;
+  width: 150px;
   display: block;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .socialMedia {
