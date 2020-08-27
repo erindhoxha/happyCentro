@@ -287,10 +287,6 @@ body {
   font-family: "Titillium Web";
 }
 
-button {
-  font-family: "Track";
-}
-
 .icon-code {
   margin-bottom: 20px;
   animation: float 2s ease-in-out infinite;
