@@ -4,6 +4,7 @@ $(".loader").show();
   var names = [];
   setTimeout(() => {
     $(".loader").fadeOut(700);
+    $(".web-wrapper").fadeIn(500);
   }, 2200);
       
     $(window).on('load', function() {
